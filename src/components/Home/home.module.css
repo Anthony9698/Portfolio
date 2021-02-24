@@ -3,8 +3,7 @@
 }
 
 .Greeting {
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin: 5px auto;
     font-family: 'Roboto';
     font-size: 4.5rem;
     color: #1E1E24;
