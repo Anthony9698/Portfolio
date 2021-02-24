@@ -1,19 +1,19 @@
 import React from 'react';
-import styles from './display.module.css';
+import profilePic from '../../assets/Home/Profile/me.png';
 
 const home = props => {
     return (
         <div>
-            <img></img>
+            <img src={profilePic} alt="profilePic" />
             <div>Hello, I'm Anthony.</div>
             <p>
                 I'm a Computer Science Graduate with a
                 concentraction in Software Engineering.
             </p>
             <div>
-                <img></img>
-                <img></img>
             </div>
         </div>
-    )
+    );
 }
+
+export default home;
