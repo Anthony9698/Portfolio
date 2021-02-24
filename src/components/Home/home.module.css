@@ -1,0 +1,21 @@
+.Home {
+    margin-top: 150px;
+}
+
+.Greeting {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: 'Roboto';
+    font-size: 4.5rem;
+    color: #1E1E24;
+}
+
+.Summary {
+    margin-top: 5px;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: 'Roboto';
+    font-size: 3rem;
+    color: #1E1E24;
+    opacity: 80%;
+}
