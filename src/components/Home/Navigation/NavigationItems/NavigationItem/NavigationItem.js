@@ -1,14 +1,18 @@
 import React from 'react';
+import { Link, animateScroll as scroll } from 'react-scroll';
 import styles from './navigationItem.module.css';
 
 const navigationItem = props => (
     <li className={styles.NavigationItem}>
-        <a 
-            className={styles.NavigationItem}
-            href={props.link}
-            activeClassName={styles.active}>
+        <Link
+            activeClass="active"
+            to={props.link}
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}>
             {props.children}
-        </a>
+        </Link>
     </li>
 );
 

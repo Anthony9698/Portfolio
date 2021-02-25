@@ -1,7 +1,11 @@
 .NavigationItem {
     font-family: "Roboto";
-    font-weight: bold;
+    font-weight: normal;
     font-size: 1.2rem;
     color: #E6E1E2;
-    text-decoration: none;
+    cursor: pointer;
+}
+
+.NavigationItem a:active, a:hover {
+    border-bottom: 3px solid #E6E1E2;
 }
