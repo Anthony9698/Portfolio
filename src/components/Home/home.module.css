@@ -1,6 +1,7 @@
 .Home {
-    margin-top: 64px;
     padding-top: 80px;
+    padding-bottom: 250px;
+    text-align: center;
 }
 
 .Greeting {

@@ -10,7 +10,8 @@ const navigationItem = props => (
             spy={true}
             smooth={true}
             offset={-70}
-            duration={500}>
+            duration={500}
+            onSetActive={props.onActive}>
             {props.children}
         </Link>
     </li>

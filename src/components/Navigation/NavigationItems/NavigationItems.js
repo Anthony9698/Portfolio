@@ -4,7 +4,7 @@ import styles from './navigationItems.module.css';
 
 const navigationItems = props => (
     <ul className={styles.NavigationItems}>
-        <NavigationItem link="home">Home</NavigationItem>
+        <NavigationItem link="home" onActive={props.highlightHome}>Home</NavigationItem>
         <NavigationItem link="about">About</NavigationItem>
         <NavigationItem link="projects">Projects</NavigationItem>
         <NavigationItem link="contact">Contact</NavigationItem>        

@@ -10,7 +10,7 @@ const home = props => (
         <h1 className={styles.Greeting}>Hello, I'm Anthony.</h1>
         <p className={styles.Summary}>
             I'm a Computer Science Graduate with a
-            concentraction in Software Engineering.
+            concentration in Software Engineering.
             </p>
         <div className={styles.SocialLinks}>
             <a href="https://github.com/Anthony9698">
