@@ -5,7 +5,8 @@ import styles from './navigationItem.module.css';
 const navigationItem = props => (
     <li className={styles.NavigationItem}>
         <Link
-            activeClass="active"
+            activeClass={styles.active}
+            className={styles.Link}
             to={props.link}
             spy={true}
             smooth={true}

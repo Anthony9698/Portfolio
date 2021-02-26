@@ -6,6 +6,21 @@
     cursor: pointer;
 }
 
-.NavigationItem a:active, a:hover {
-    border-bottom: 3px solid #E6E1E2;
+.active {
+    color: red !important;
 }
+
+/* .NavigationItem a:active::before {
+    content: '';
+    position: absolute;
+    background: #E6E1E2; 
+    height: 5px;
+    top: 100%;
+    left: 0;
+    width: 50%;
+    transition: width 0.5s ease;
+} */
+
+/* .NavigationItem a:hover::before {
+    width: 100%;
+} */

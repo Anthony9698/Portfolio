@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Home from '../../components/Home/Home';
+import About from '../../components/About/About';
 import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
 
 class Portfolio extends Component {
@@ -7,7 +8,8 @@ class Portfolio extends Component {
         return (
             <div>
                 <Toolbar />
-                <Home />
+                <Home id="home" />
+                <About id="about" />
             </div>
         );
     }
