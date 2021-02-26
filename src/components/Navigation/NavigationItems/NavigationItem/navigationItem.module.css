@@ -1,7 +1,7 @@
 .NavigationItem {
     font-family: "Roboto";
     font-weight: normal;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #E6E1E2;
     cursor: pointer;
     transition: color 0.3s ease;
@@ -9,5 +9,4 @@
 
 .NavigationItem:hover, .active {
     color: #1E1E24 !important;
-
 }
