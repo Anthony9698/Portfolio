@@ -4,23 +4,10 @@
     font-size: 1.2rem;
     color: #E6E1E2;
     cursor: pointer;
+    transition: color 0.3s ease;
 }
 
-.active {
-    color: red !important;
+.NavigationItem:hover, .active {
+    color: #1E1E24 !important;
+
 }
-
-/* .NavigationItem a:active::before {
-    content: '';
-    position: absolute;
-    background: #E6E1E2; 
-    height: 5px;
-    top: 100%;
-    left: 0;
-    width: 50%;
-    transition: width 0.5s ease;
-} */
-
-/* .NavigationItem a:hover::before {
-    width: 100%;
-} */

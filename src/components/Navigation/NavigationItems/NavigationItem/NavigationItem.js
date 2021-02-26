@@ -6,7 +6,6 @@ const navigationItem = props => (
     <li className={styles.NavigationItem}>
         <Link
             activeClass={styles.active}
-            className={styles.Link}
             to={props.link}
             spy={true}
             smooth={true}
