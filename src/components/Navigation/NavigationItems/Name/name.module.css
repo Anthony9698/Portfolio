@@ -9,6 +9,10 @@
     transition: color 0.5s ease;
 }
 
+.Active {
+    color: #1E1E24;
+}
+
 .Name:hover {
     color: #1E1E24;
 }

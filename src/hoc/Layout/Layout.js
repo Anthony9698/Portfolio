@@ -5,8 +5,13 @@ import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
 
 class Layout extends Component {
     state = {
-        showSideDrawer: false
+        showSideDrawer: false,
+        activeName: false
     }
+
+    activeNameHandler = () => this.setState({ activeName: true });
+    deactiveNameHandler = () => this.setState({ activeName: false });
+    
 
     // SideDrawerClosedHandler = () => {
     //     this.setState({ showSideDrawer: false });
@@ -21,7 +26,10 @@ class Layout extends Component {
     render() {
         return (
             <Aux>
-                <Toolbar />
+                <Toolbar 
+                    activateName={this.activeNameHandler}
+                    deactivateName={this.deactiveNameHandler} 
+                    activeName={this.state.activeName} />
                 {/* <Toolbar drawerToggleClicked={this.SideDrawerTogglerHandler} />
                 <SideDrawer
                     open={this.state.showSideDrawer}

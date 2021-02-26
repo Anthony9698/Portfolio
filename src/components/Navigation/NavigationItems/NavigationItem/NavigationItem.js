@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 import styles from './navigationItem.module.css';
 
 const navigationItem = props => (
@@ -11,7 +11,8 @@ const navigationItem = props => (
             smooth={true}
             offset={-70}
             duration={500}
-            onSetActive={props.onActive}>
+            onSetActive={props.onActive}
+            onSetInactive={props.onInactive}>
             {props.children}
         </Link>
     </li>

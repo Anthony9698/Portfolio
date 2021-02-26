@@ -11,7 +11,7 @@ const home = props => (
         <p className={styles.Summary}>
             I'm a Computer Science Graduate with a
             concentration in Software Engineering.
-            </p>
+        </p>
         <div className={styles.SocialLinks}>
             <a href="https://github.com/Anthony9698">
                 <img src={gitHubLink} alt="github link" />
