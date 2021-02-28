@@ -4,15 +4,14 @@ import Aux from '../../../../hoc/Auxiliary/Auxiliary';
 import styles from './sideDrawer.module.css';
 
 const sideDrawer = props => {
-    let attachedClasses = [classes.SideDrawer, classes.Close]
-
+    let attachedStyles = [styles.SideDrawer, styles.Close]
     if (props.open) {
-        attachedClasses = [classes.SideDrawer, classes.Open];
+        attachedStyles = [styles.SideDrawer, styles.Open];
     }
 
     return (
         <Aux>
-            <div className={attachedClasses.join(' ')}>
+            <div className={attachedStyles.join(' ')}>
                 <nav>
                     <NavigationItems />
                 </nav>
