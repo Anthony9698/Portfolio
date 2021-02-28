@@ -1,6 +1,6 @@
-.Name {
+.Logo {
     font-family: "Roboto";
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #E6E1E2;
     cursor: pointer;
     width: 100%;
@@ -13,12 +13,12 @@
     color: #1E1E24;
 }
 
-.Name:hover {
+.Logo:hover {
     color: #1E1E24;
 }
 
 @media (max-width: 576px) {
-    .Name {
+    .Logo {
         display: flex;
     }
 }
