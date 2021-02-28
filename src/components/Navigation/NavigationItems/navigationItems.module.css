@@ -12,6 +12,7 @@
 
 @media (max-width: 576px) {
     .NavigationItems {
+        display: none;
         flex-flow: column;
         background-color: #8C898A;
         position: absolute;
