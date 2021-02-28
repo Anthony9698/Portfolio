@@ -1,24 +1,14 @@
 .Logo {
-    font-family: "Roboto";
-    font-size: 2rem;
-    color: #E6E1E2;
+    position: absolute;
+    left: 16px;
+    padding-bottom: 4px;
+}
+
+.Logo svg {
     cursor: pointer;
-    width: 100%;
-    padding-left: 16px;
-    display: none;
     transition: color 0.5s ease;
 }
 
-.Active {
-    color: #1E1E24;
-}
-
-.Logo:hover {
-    color: #1E1E24;
-}
-
-@media (max-width: 576px) {
-    .Logo {
-        display: flex;
-    }
+.Logo:hover svg g > * {
+    fill: #CCC8C9;
 }
