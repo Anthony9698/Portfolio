@@ -1,18 +1,21 @@
 .SideDrawer {
-    display: none;
+    display: flex;
     background-color: #8C898A;
-    position: absolute;
+    position: fixed;
     top: 50px;
     left: 0;
     width: 100%;
-    height: 120px;
     text-align: left;
     padding: 16px;
     border-bottom: 2px solid #1E1E24;
     transition: transform 0.3s ease-out;
 }
 
-@media (max-width: 576px) {
+.SideDrawer nav {
+    height: fit-content;
+}
+
+@media (min-width: 576px) {
     .SideDrawer {
         display: none;
     }
@@ -20,8 +23,10 @@
 
 .Open {
     transform: translateY(0);
+    z-index: 3;
 }
 
 .Close {
     transform: translateY(-100%);
+    z-index: 0;
 }

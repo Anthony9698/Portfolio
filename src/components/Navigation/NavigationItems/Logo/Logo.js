@@ -3,7 +3,7 @@ import styles from './logo.module.css';
 
 const logo = props => {
     return (
-        <div className={styles.Logo}>
+        <div className={styles.Logo} onClick={props.clicked}>
             <svg xmlns="http://www.w3.org/2000/svg" width="47.5" height="64" viewBox="0 0 47.5 64">
                 <g id="Group_127" data-name="Group 127" transform="translate(932 -13073)">
                     <text
@@ -11,10 +11,10 @@ const logo = props => {
                         transform="translate(-931.5 13123.5)"
                         fill="#E6E1E2"
                         stroke="#1e1e24"
-                        stroke-width="1.5"
-                        font-size="40"
-                        font-family="RobotoMono-Medium, Roboto Mono"
-                        font-weight="500">
+                        strokeWidth="1.5"
+                        fontSize="40"
+                        fontFamily="RobotoMono-Medium, Roboto Mono"
+                        fontWeight="500">
                         <tspan x="0" y="0">A</tspan>
                     </text>
                     <text
@@ -22,10 +22,10 @@ const logo = props => {
                         transform="translate(-914 13123.5)"
                         fill="#E6E1E2"
                         stroke="#1e1e24"
-                        stroke-width="1.5"
-                        font-size="40"
-                        font-family="RobotoMono-Medium, Roboto Mono"
-                        font-weight="500">
+                        strokeWidth="1.5"
+                        fontSize="40"
+                        fontFamily="RobotoMono-Medium, Roboto Mono"
+                        fontWeight="500">
                         <tspan x="0" y="0">V</tspan>
                     </text>
                 </g>

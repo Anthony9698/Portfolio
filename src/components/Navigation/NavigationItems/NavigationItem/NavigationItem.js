@@ -1,21 +1,33 @@
 import React from 'react';
-import { Link } from 'react-scroll';
+import { Link, scroller } from 'react-scroll';
 import styles from './navigationItem.module.css';
 
-const navigationItem = props => (
-    <li className={styles.NavigationItem}>
-        <Link
-            activeClass={styles.active}
-            to={props.link}
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-            onSetActive={props.onActive}
-            onSetInactive={props.onInactive}>
-            {props.children}
-        </Link>
-    </li>
-);
+const navigationItem = props => {
+    const activeClass = styles.active;
+    const link = props.link;
+    const spy = true;
+    const smooth = true;
+    const offset = -70;
+    const duration = 500;
+    return (
+        <li className={styles.NavigationItem} onClick={() => scroller.scrollTo(link, {
+            activeClass: activeClass,
+            duration: duration,
+            smooth: smooth,
+            offset: offset,
+            spy: spy
+        })}>
+            <Link
+                activeClass={activeClass}
+                to={link}
+                spy={spy}
+                smooth={smooth}
+                offset={offset}
+                duration={duration}>
+                {props.children}
+            </Link>
+        </li>
+    );
+}
 
 export default navigationItem;

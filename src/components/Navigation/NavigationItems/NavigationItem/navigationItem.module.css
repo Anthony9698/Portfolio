@@ -10,3 +10,9 @@
 .NavigationItem:hover, .active {
     color: #1E1E24 !important;
 }
+
+@media (max-width: 576px) {
+    .NavigationItem {
+        margin: 8px 0;
+    }
+}

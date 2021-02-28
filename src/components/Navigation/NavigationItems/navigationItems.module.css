@@ -7,11 +7,12 @@
     flex-flow: nowrap;
     margin: 0;
     padding: 0;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 @media (max-width: 576px) {
     .NavigationItems {
         flex-flow: column;
+        height: 150px;
     }
 }
