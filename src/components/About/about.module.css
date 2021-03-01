@@ -1,5 +1,36 @@
 .About {
     border: 5px solid red;
-    text-align: left;
-    height: 100vh;
+    padding: 40px;
+}
+
+.Title {
+    border: 1px solid green;
+    font-family: 'Roboto';
+    font-size: 3rem;
+    font-weight: normal;
+    color: #1E1E24;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.Description {
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+    color: #1E1E24;
+    opacity: 80%;
+    border: 1px solid orange;
+    width: 50%;
+}
+
+.DownloadResume {
+    background-color: #4E937A;
+    color: #E6E1E2;
+    width: 170px;
+    padding: 10px;
+    border-radius: 38px;
+    border: 1.5px solid #1E1E24;
+    font-family: 'Roboto';
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
 }
