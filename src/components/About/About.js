@@ -6,12 +6,17 @@ const about = props => (
         className={styles.About}
         id={props.id}>
         <h2 className={styles.Title}>About Me</h2>
-        <p className={styles.Description}>
-            I love programming and learning new technologies
-            to solve complicated problems. I take pride in
-            developing elegant software solutions that are
-            easy to understand and efficient.
-        </p>
+        <div className={styles.Description}>
+            <p>
+                I love programming and learning new technologies
+                to solve complicated problems. I take pride in
+                developing elegant software solutions that are
+                easy to understand and efficient.
+            </p>
+            <div className={styles.Skills}>
+                <h3>Skills</h3>
+            </div>
+        </div>
         <button className={styles.DownloadResume}>Download Resume</button>
     </div>
 );
