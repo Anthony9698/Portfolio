@@ -46,7 +46,6 @@ span {
 
 .GraphRowProgress {
     float: left;
-    width: calc(90% - 100px);
     background-color: #417A65;
     color: #417A65;
     animation-name: progress;
@@ -65,7 +64,7 @@ span {
     }
 }
 
-@keyframes progress {
+/* @keyframes progress {
     from {width: 0;}
     to {width: calc(90% - 100px);}
-}
+} */
