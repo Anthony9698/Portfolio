@@ -1,0 +1,71 @@
+.Skills {
+    width: 50%;
+}
+
+.Skills h3 {
+    font-weight: normal;
+    margin: 0;
+    text-align: center;
+}
+
+.Graph {
+    padding: 0 16px;
+}
+
+.GraphRow {
+    height: 32px;
+    margin: 16px 0;
+    background-color: #D9D4D6;
+    text-align: end;
+    position: relative;
+}
+
+.GraphRow:first-child {
+    margin-top: 8px;
+}
+
+.GraphRowLabel {
+    display: flex;
+    width: 100px;
+    height: 100%;
+    align-items: center;
+    font-size: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #55A185;
+    float: left;
+    color: #E6E1E2;
+}
+
+span {
+    position: absolute;
+    right: 8px;
+    font-size: 1.25rem;
+    bottom: 0;
+}
+
+.GraphRowProgress {
+    float: left;
+    width: calc(90% - 100px);
+    background-color: #417A65;
+    color: #417A65;
+    animation-name: progress;
+    animation-duration: 4s;
+}
+
+@media (max-width: 992px) {
+    .Skills {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    span {
+        display: none;
+    }
+}
+
+@keyframes progress {
+    from {width: 0;}
+    to {width: calc(90% - 100px);}
+}
