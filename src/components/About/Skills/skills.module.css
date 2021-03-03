@@ -46,10 +46,17 @@ span {
 
 .GraphRowProgress {
     float: left;
-    background-color: #417A65;
-    color: #417A65;
+    color: transparent;
+    width: calc(100% - 100px);
+    height: 100%;
+}
+
+.Bar {
+    width: var(--width);
+    height: 100%;
     animation-name: progress;
     animation-duration: 4s;
+    background-color: #417A65;
 }
 
 @media (max-width: 992px) {
@@ -64,7 +71,7 @@ span {
     }
 }
 
-/* @keyframes progress {
+@keyframes progress {
     from {width: 0;}
-    to {width: calc(90% - 100px);}
-} */
+    to {width: var(--width);}
+}
