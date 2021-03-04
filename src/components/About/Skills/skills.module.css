@@ -1,5 +1,6 @@
 .Skills {
     width: 50%;
+    padding: 20px;
 }
 
 .Skills h3 {
@@ -58,7 +59,7 @@ span {
 
 .BarAnimation {
     animation-name: progress;
-    animation-duration: 4s;
+    animation-duration: 2s;
     background-color: #417A65;
 }
 

@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './skills.module.css';
 
 const skills = props => {
-    let percentage = '90%';
     let attachedStyles = [styles.Bar];
     if (props.isVisible) {
         attachedStyles = [styles.Bar, styles.BarAnimation];
@@ -15,68 +14,68 @@ const skills = props => {
                 <div className={styles.GraphRow}>
                     <div className={styles.GraphRowLabel}>Java</div>
                     <div className={styles.GraphRowProgress}>
-                        <div className={attachedStyles.join(' ')} style={{ '--width': percentage }}></div>
+                        <div className={attachedStyles.join(' ')} style={{ '--width': '80%' }}></div>
                     </div>
-                    <span>{percentage}</span>
+                    <span>{'80%'}</span>
                 </div>
                 <div className={styles.GraphRow}>
                     <div className={styles.GraphRowLabel}>Python</div>
                     <div className={styles.GraphRowProgress}>
-                        <div className={attachedStyles.join(' ')} style={{ '--width': '65%' }}></div>
+                        <div className={attachedStyles.join(' ')} style={{ '--width': '85%' }}></div>
                     </div>
-                    <span>{'65%'}</span>
+                    <span>{'85%'}</span>
                 </div>
                 <div className={styles.GraphRow}>
-                    <div className={styles.GraphRowLabel}>Java</div>
+                    <div className={styles.GraphRowLabel}>C</div>
                     <div className={styles.GraphRowProgress}>
-                        <div className={attachedStyles.join(' ')} style={{ '--width': percentage }}></div>
+                        <div className={attachedStyles.join(' ')} style={{ '--width': '70%' }}></div>
                     </div>
-                    <span>{percentage}</span>
+                    <span>{'70%'}</span>
                 </div>
                 <div className={styles.GraphRow}>
-                    <div className={styles.GraphRowLabel}>Python</div>
+                    <div className={styles.GraphRowLabel}>HTML</div>
                     <div className={styles.GraphRowProgress}>
-                        <div className={attachedStyles.join(' ')} style={{ '--width': '65%' }}></div>
+                        <div className={attachedStyles.join(' ')} style={{ '--width': '90%' }}></div>
                     </div>
-                    <span>{'65%'}</span>
+                    <span>{'90%'}</span>
                 </div>
                 <div className={styles.GraphRow}>
-                    <div className={styles.GraphRowLabel}>Java</div>
+                    <div className={styles.GraphRowLabel}>CSS</div>
                     <div className={styles.GraphRowProgress}>
-                        <div className={attachedStyles.join(' ')} style={{ '--width': percentage }}></div>
+                        <div className={attachedStyles.join(' ')} style={{ '--width': '90%' }}></div>
                     </div>
-                    <span>{percentage}</span>
+                    <span>{'90%'}</span>
                 </div>
                 <div className={styles.GraphRow}>
-                    <div className={styles.GraphRowLabel}>Python</div>
+                    <div className={styles.GraphRowLabel}>SASS</div>
                     <div className={styles.GraphRowProgress}>
-                        <div className={attachedStyles.join(' ')} style={{ '--width': '65%' }}></div>
+                        <div className={attachedStyles.join(' ')} style={{ '--width': '60%' }}></div>
                     </div>
-                    <span>{'65%'}</span>
+                    <span>{'60%'}</span>
                 </div>
                 <div className={styles.GraphRow}>
-                    <div className={styles.GraphRowLabel}>Python</div>
+                    <div className={styles.GraphRowLabel}>JavaScript</div>
                     <div className={styles.GraphRowProgress}>
-                        <div className={attachedStyles.join(' ')} style={{ '--width': '65%' }}></div>
+                        <div className={attachedStyles.join(' ')} style={{ '--width': '55%' }}></div>
                     </div>
-                    <span>{'65%'}</span>
+                    <span>{'55%'}</span>
                 </div>
                 <div className={styles.GraphRow}>
-                    <div className={styles.GraphRowLabel}>Python</div>
+                    <div className={styles.GraphRowLabel}>ReactJS</div>
                     <div className={styles.GraphRowProgress}>
-                        <div className={attachedStyles.join(' ')} style={{ '--width': '65%' }}></div>
+                        <div className={attachedStyles.join(' ')} style={{ '--width': '50%' }}></div>
                     </div>
-                    <span>{'65%'}</span>
+                    <span>{'50%'}</span>
                 </div>
                 <div className={styles.GraphRow}>
-                    <div className={styles.GraphRowLabel}>Python</div>
+                    <div className={styles.GraphRowLabel}>SQL</div>
                     <div className={styles.GraphRowProgress}>
-                        <div className={attachedStyles.join(' ')} style={{ '--width': '65%' }}></div>
+                        <div className={attachedStyles.join(' ')} style={{ '--width': '50%' }}></div>
                     </div>
-                    <span>{'65%'}</span>
+                    <span>{'50%'}</span>
                 </div>
                 <div className={styles.GraphRow}>
-                    <div className={styles.GraphRowLabel}>Python</div>
+                    <div className={styles.GraphRowLabel}>Git</div>
                     <div className={styles.GraphRowProgress}>
                         <div className={attachedStyles.join(' ')} style={{ '--width': '65%' }}></div>
                     </div>
