@@ -1,4 +1,71 @@
 .Projects {
     border: 2px solid salmon;
+    padding: 40px;
     height: 100vh;
 }
+
+.Content {
+    border: 2px solid green;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Title {
+    font-family: 'Roboto';
+    font-size: 3rem;
+    font-weight: normal;
+    color: #1E1E24;
+    margin-top: 0;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.Description {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    margin-bottom: 16px;
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+    color: #1E1E24;
+    /* border: 1px solid blue;  */
+}
+
+.Description p {
+    margin: 0;
+    opacity: 80%;
+    text-align: center;
+}
+
+.ProjectsDisplay {
+    border: 2px solid slateblue;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 90%;
+    gap: 50px;
+
+}
+
+.Project {
+    width: 420px;
+    height: 280px;
+    border: 3px solid black;
+    border-radius: 5%;
+}
+
+/* .ProjectGrid {
+    border: 1px solid sienna;
+    display: grid;
+    grid-template-columns: repeat(3, 420px);
+    grid-template-rows: repeat(2, 280px);
+    gap: 50px;
+}
+
+.Project {
+    border: 1px solid red;
+    text-align: center;
+} */
