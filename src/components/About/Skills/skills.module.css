@@ -54,6 +54,9 @@ span {
 .Bar {
     width: var(--width);
     height: 100%;
+}
+
+.BarAnimation {
     animation-name: progress;
     animation-duration: 4s;
     background-color: #417A65;

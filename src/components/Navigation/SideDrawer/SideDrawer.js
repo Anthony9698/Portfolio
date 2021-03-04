@@ -4,7 +4,7 @@ import Aux from '../../../hoc/Auxiliary/Auxiliary';
 import styles from './sideDrawer.module.css';
 
 const sideDrawer = props => {
-    let attachedStyles = [styles.SideDrawer, styles.Close]
+    let attachedStyles = [styles.SideDrawer, styles.Close];
     if (props.open) {
         attachedStyles = [styles.SideDrawer, styles.Open];
     }
