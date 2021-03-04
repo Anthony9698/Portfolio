@@ -7,7 +7,7 @@ const navigationItem = props => {
     const link = props.link;
     const spy = true;
     const smooth = true;
-    const offset = props.offset;
+    const offset = -50;
     const duration = 500;
     return (
         <li className={styles.NavigationItem} onClick={() => scroller.scrollTo(link, {

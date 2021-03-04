@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Home from '../../components/Home/Home';
 import About from '../../components/About/About';
+import Projects from '../../components/Projects/Projects';
 import Aux from '../../hoc/Auxiliary/Auxiliary';
 
 class Portfolio extends Component {
@@ -19,6 +20,7 @@ class Portfolio extends Component {
                 <About id="about" 
                     onAbout={this.aboutVisibilityHandler} 
                     aboutVisible={this.state.aboutVisible} />
+                <Projects id="projects" />
             </Aux>
         );
     }
