@@ -1,12 +1,12 @@
 import React from 'react';
-import profilePic from '../../assets/Home/Profile/me.png';
+import profilePic from '../../assets/Home/Profile/ginger.png';
 import gitHubLink from '../../assets/Home/Social/github.png';
 import linkedInLink from '../../assets/Home/Social/linkedIn.png';
 import styles from './home.module.css';
 
 const home = props => (
     <div className={styles.Home} id={props.id}>
-        <img src={profilePic} alt="profile" />
+        <img src={profilePic} alt="profile" style={{width: '300px', height: '200px'}} />
         <h1 className={styles.Greeting}>Hello, I'm Anthony.</h1>
         <p className={styles.Summary}>
             I'm a Computer Science Graduate with a

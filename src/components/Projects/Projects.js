@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './projects.module.css';
-import projectPlaceholder from '../../assets/Projects/Placeholders/empty.jpg';
+import Project from './Project/Project';
 
 const projects = props => (
     <div className={styles.Projects} id={props.id}>
@@ -12,26 +12,11 @@ const projects = props => (
                 </p>
             </div>
             <div className={styles.ProjectsDisplay}>
-                <div className={styles.Project}>
-                    <img src={projectPlaceholder} alt="project" />
-                    <div>AmiTask</div>
-                </div>
-                <div className={styles.Project}>
-                    <img src={projectPlaceholder} alt="project" />
-                    <div>AmiTask</div>
-                </div>
-                <div className={styles.Project}>
-                    <img src={projectPlaceholder} alt="project" />
-                    <div>AmiTask</div>
-                </div>
-                <div className={styles.Project}>
-                    <img src={projectPlaceholder} alt="project" />
-                    <div>AmiTask</div>
-                </div>
-                <div className={styles.Project}>
-                    <img src={projectPlaceholder} alt="project" />
-                    <div>AmiTask</div>
-                </div>
+                <Project />
+                <Project />
+                <Project />
+                <Project />
+                <Project />
             </div>
         </div>
     </div>

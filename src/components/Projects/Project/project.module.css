@@ -1,0 +1,36 @@
+.Project {
+    box-sizing: border-box;
+    width: var(--project-content-width);
+    height: var(--project-content-height);
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ProjectCoverImg {
+    width: 100%;
+    height: calc(var(--project-content-height) - 40px);
+    border: 1px solid #1E1E24;
+    border-radius: 5%;
+}
+
+.ProjectTitle {
+    width: 100%;
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #2D5446;
+}
+
+@media (max-width: 445px) {
+    .Project  {
+        width: calc(var(--project-content-width) * .4);
+        height: calc(var(--project-content-width) * .4);
+    }
+
+    .Project img {
+        width: 100%;
+        height: calc(var(--project-content-width) * .4 - 40px);
+    }
+}
