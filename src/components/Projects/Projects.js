@@ -11,12 +11,26 @@ const projects = props => (
                 </p>
             </div>
             <div className={styles.ProjectsDisplay}>
-                <div className={styles.Project}>1</div>
-                <div className={styles.Project}>1</div>
-                <div className={styles.Project}>1</div>
-                <div className={styles.Project}>1</div>
-                <div className={styles.Project}>1</div>
-                <div className={styles.Project}>1</div>
+                <div className={styles.Project}>
+                    <img></img>
+                    <div>AmiTask</div>
+                </div>
+                <div className={styles.Project}>
+                    <img></img>
+                    <div>AmiTask</div>
+                </div>
+                <div className={styles.Project}>
+                    <img></img>
+                    <div>AmiTask</div>
+                </div>
+                <div className={styles.Project}>
+                    <img></img>
+                    <div>AmiTask</div>
+                </div>
+                <div className={styles.Project}>
+                    <img></img>
+                    <div>AmiTask</div>
+                </div>
             </div>
         </div>
     </div>

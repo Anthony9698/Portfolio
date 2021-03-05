@@ -1,11 +1,14 @@
+:root {
+    --project-content-width: 420px;
+    --project-content-height: 320px;
+}
+
 .Projects {
-    border: 2px solid salmon;
     padding: 40px;
     height: 100vh;
 }
 
 .Content {
-    border: 2px solid green;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -29,7 +32,6 @@
     font-family: 'Roboto';
     font-size: 1.5rem;
     color: #1E1E24;
-    /* border: 1px solid blue;  */
 }
 
 .Description p {
@@ -39,33 +41,55 @@
 }
 
 .ProjectsDisplay {
-    border: 2px solid slateblue;
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     text-align: center;
-    width: 90%;
+    width: 100%;
     gap: 50px;
 
 }
 
 .Project {
-    width: 420px;
-    height: 280px;
-    border: 3px solid black;
+    box-sizing: border-box;
+    width: var(--project-content-width);
+    height: var(--project-content-height);
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Project img {
+    width: 100%;
+    height: calc(var(--project-content-height) - 40px);
+    border: 1px solid #1E1E24;
     border-radius: 5%;
 }
 
-/* .ProjectGrid {
-    border: 1px solid sienna;
-    display: grid;
-    grid-template-columns: repeat(3, 420px);
-    grid-template-rows: repeat(2, 280px);
-    gap: 50px;
+.Project div {
+    width: 100%;
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #2D5446;
 }
 
-.Project {
-    border: 1px solid red;
-    text-align: center;
-} */
+@media (max-width: 530px) {
+    .ProjectsDisplay {
+        width: 100vw;
+    }
+}
+
+@media (max-width: 445px) {
+    .Project  {
+        width: calc(var(--project-content-width) * .4);
+        height: calc(var(--project-content-width) * .4);
+    }
+
+    .Project img {
+        width: 100%;
+        height: calc(var(--project-content-width) * .4 - 40px);
+    }
+}
