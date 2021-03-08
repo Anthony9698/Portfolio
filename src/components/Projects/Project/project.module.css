@@ -12,4 +12,67 @@
     font-size: 1.5rem;
     font-weight: normal;
     color: #2D5446;
+    text-decoration: none;
+}
+
+.Overlay {
+    border-radius: 5%;
+    display: flex;
+    align-items: stretch;
+    position: relative;
+}
+
+.Overlay img {
+    transition: filter 0.5s ease;
+}
+
+.Overlay div {
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s ease;
+}
+.Overlay div button {
+    width: 128px;
+    height: 35px;
+    position: absolute;
+    bottom: 10px;
+    transition: bottom 0.5s ease;
+    cursor: pointer;
+    background-color: #4E937A;
+    color: #E6E1E2;
+    font-family: 'Roboto';
+    font-size: 1.1rem;
+    outline: none;
+    border: 1.5px solid #1E1E24;
+}
+
+.Overlay div:hover button {
+    bottom: 115px;
+}
+
+.Overlay div button:hover {
+    background-color: #2D5446;
+}
+
+.Overlay div:hover {
+    opacity: 1;
+}
+
+.Overlay:hover img {
+    filter: brightness(0.5);
+}
+
+@media (max-width: 400px) {
+    .Overlay div {
+        display: none;
+    }
+
+    .Overlay:hover img {
+        filter: brightness(1);
+    }
 }
