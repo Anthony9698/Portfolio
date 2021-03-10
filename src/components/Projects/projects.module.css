@@ -1,6 +1,7 @@
 .Projects {
     padding: 40px;
     height: 100vh;
+    position: relative;
 }
 
 .Content {

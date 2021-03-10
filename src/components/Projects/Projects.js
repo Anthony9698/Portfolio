@@ -13,7 +13,7 @@ const projects = props => (
             </div>
             <div className={styles.ProjectsDisplay}>
                 <Project />
-                <Project />
+                <Project show />
                 <Project />
                 <Project />
                 <Project />

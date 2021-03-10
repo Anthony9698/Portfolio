@@ -1,0 +1,75 @@
+:root {
+    --max-detail-width: 600px;
+    --min-detail-height: 750px;
+    --base-detail-width: 90vw;
+    --base-detail-height: calc(1000px - 40vw);
+    --base-carousel-height: calc(var(--base-detail-width) * .67);
+    --max-carousel-height: calc(var(--max-detail-width ) * .67);
+}
+
+.Detail {
+    border: 0.5px solid #1E1E24;
+    background-color: white;
+    margin: 20px auto;
+    width: var(--base-detail-width);
+    height: var(--base-detail-height);
+    max-width: var(--max-detail-width);
+    min-height: var(--min-detail-height);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: 12vh;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    /* opacity: 0;
+    transform: scale(0);
+    transition: transform 0.2s, opacity 0.2s;  */
+}
+
+.Carousel {
+    position: relative;
+    height: var(--base-carousel-height);
+    max-height: var(--max-carousel-height);
+}
+
+.Carousel .Slide {
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    border-bottom: 1px solid #1E1E24;
+}
+
+.Carousel .Close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.Carousel button {
+    color: #E6E1E2;
+}
+
+.Carousel button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.Carousel button:hover {
+    color: #A6A2A3;
+}
+
+.ImgArrowPrev {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+}
+
+.ImgArrowNext {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
