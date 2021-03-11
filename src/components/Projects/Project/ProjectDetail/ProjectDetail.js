@@ -2,9 +2,10 @@ import React from 'react';
 import styles from './projectDetail.module.css';
 import projectPlaceholder from '../../../../assets/Projects/Placeholders/empty.jpg';
 
-const projectDetail = () => {
+const projectDetail = props => {
     return (
         <div className={styles.Detail}>
+            {props.projectId}
             <div className={styles.Carousel}>
                 <img className={styles.Slide} src={projectPlaceholder} alt="project slide" />
                 <svg className={styles.ImgArrowPrev} xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">

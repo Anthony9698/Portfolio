@@ -5,14 +5,14 @@ import ProjectDetail from './ProjectDetail/ProjectDetail';
 
 const project = props => {
     let projectDetail;
-    if (props.show) {
-        projectDetail = <ProjectDetail />;
+    if (props.isOpen) {
+        projectDetail = <ProjectDetail projectId={props.id} />;
     }
     return (
         <div className={styles.Project}>
             <div className={styles.Overlay}>
                 <img className={styles.CoverImg} src={projectPlaceholder} alt="project cover" />
-                <div><button>Learn More</button></div>
+                <div><button onClick={props.show}>Learn More</button></div>
             </div>
             <div><a className={styles.ProjectTitle} href="#">AmiTask</a></div>
             {projectDetail}

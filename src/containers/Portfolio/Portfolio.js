@@ -6,21 +6,30 @@ import Aux from '../../hoc/Auxiliary/Auxiliary';
 
 class Portfolio extends Component {
     state = {
-        aboutVisible: false
+        aboutVisible: false,
+        currProjectDetailId: false
     }
     aboutVisibilityHandler = isVisible => {
         if (this.state.aboutVisible !== true) {
-            this.setState({aboutVisible: isVisible});  
+            this.setState({aboutVisible: isVisible});
         }
     } 
+    showProjectDetailHandler = projectId => {
+        this.setState({currProjectDetailId: projectId});
+        console.log(this.state.currProjectDetailId);
+    }
     render() {
         return (
             <Aux>
                 <Home id="home" />
-                <About id="about" 
+                <About 
+                    id="about" 
                     onAbout={this.aboutVisibilityHandler} 
                     aboutVisible={this.state.aboutVisible} />
-                <Projects id="projects" />
+                <Projects 
+                    id="projects"
+                    currProjectOpen={this.state.currProjectDetailId}
+                    showProjectDetail={this.showProjectDetailHandler} />
             </Aux>
         );
     }
