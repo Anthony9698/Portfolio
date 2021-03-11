@@ -57,15 +57,15 @@
     border: 1.5px solid #1E1E24;
 }
 
-.Overlay .LearnMore:hover button {
+.Overlay:hover .LearnMore button {
     bottom: 115px;
 }
 
-.Overlay .LearnMore button:hover {
+.LearnMore button:hover {
     background-color: #2D5446;
 }
 
-.Overlay .LearnMore:hover {
+.Overlay:hover .LearnMore {
     opacity: 1;
 }
 
@@ -79,7 +79,7 @@
 }
 
 @media (max-width: 400px) {
-    .Overlay .LearnMore {
+    .Overlay .LearnMore, .Overlay .ProjectTitle {
         display: none;
     }
 
