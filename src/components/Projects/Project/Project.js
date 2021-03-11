@@ -10,7 +10,7 @@ const project = props => {
                 <img className={styles.CoverImg} src={projectPlaceholder} alt="project cover" />
                 <div><button onClick={props.show}>Learn More</button></div>
             </div>
-            <div><a className={styles.ProjectTitle} href="#">AmiTask</a></div>
+            <div className={styles.ProjectTitle}>AmiTask</div>
             <ProjectDetail projectId={props.id} close={props.closeProject} open={props.isOpen} />
         </div>
     );
