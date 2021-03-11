@@ -6,7 +6,7 @@ import ProjectDetail from './ProjectDetail/ProjectDetail';
 const project = props => {
     let projectDetail;
     if (props.isOpen) {
-        projectDetail = <ProjectDetail projectId={props.id} />;
+        projectDetail = <ProjectDetail projectId={props.id} close={props.close} />;
     }
     return (
         <div className={styles.Project}>

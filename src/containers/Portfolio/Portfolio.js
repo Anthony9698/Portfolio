@@ -16,7 +16,9 @@ class Portfolio extends Component {
     } 
     showProjectDetailHandler = projectId => {
         this.setState({currProjectDetailId: projectId});
-        console.log(this.state.currProjectDetailId);
+    }
+    closeProjectDetailHandler = () => {
+        this.setState({currProjectDetailId: false});
     }
     render() {
         return (
@@ -29,7 +31,8 @@ class Portfolio extends Component {
                 <Projects 
                     id="projects"
                     currProjectOpen={this.state.currProjectDetailId}
-                    showProjectDetail={this.showProjectDetailHandler} />
+                    showProjectDetail={this.showProjectDetailHandler}
+                    closeProjectDetail={this.closeProjectDetailHandler} />
             </Aux>
         );
     }
