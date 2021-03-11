@@ -1,9 +1,4 @@
-.Project {
-    position: relative;
-    border: 1px solid red;
-}
-
-.Project .CoverImg {
+.CoverImg {
     width: 100%;
     max-width: 420px;
     max-height: 280px;
@@ -18,7 +13,7 @@
     font-weight: normal;
     color: #2D5446;
     text-decoration: none;
-    /* border: 1px solid blue; */
+    pointer-events: none;
     position: absolute;
     left: 0;
     bottom: -36px;
@@ -37,7 +32,7 @@
     transition: filter 0.5s ease;
 }
 
-.Overlay div {
+.Overlay .LearnMore {
     opacity: 0;
     height: 100%;
     width: 100%;
@@ -47,7 +42,7 @@
     justify-content: center;
     transition: opacity 0.5s ease;
 }
-.Overlay div button {
+.Overlay .LearnMore button {
     width: 128px;
     height: 35px;
     position: absolute;
@@ -62,15 +57,15 @@
     border: 1.5px solid #1E1E24;
 }
 
-.Overlay div:hover button {
+.Overlay .LearnMore:hover button {
     bottom: 115px;
 }
 
-.Overlay div button:hover {
+.Overlay .LearnMore button:hover {
     background-color: #2D5446;
 }
 
-.Overlay div:hover {
+.Overlay .LearnMore:hover {
     opacity: 1;
 }
 
@@ -84,7 +79,7 @@
 }
 
 @media (max-width: 400px) {
-    .Overlay div {
+    .Overlay .LearnMore {
         display: none;
     }
 

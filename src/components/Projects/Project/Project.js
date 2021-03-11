@@ -8,9 +8,9 @@ const project = props => {
         <div className={styles.Project}>
             <div className={styles.Overlay}>
                 <img className={styles.CoverImg} src={projectPlaceholder} alt="project cover" />
-                <div><button onClick={props.show}>Learn More</button></div>
+                <div className={styles.LearnMore}><button onClick={props.show}>Learn More</button></div>
+                <div className={styles.ProjectTitle}>AmiTask</div>
             </div>
-            <div className={styles.ProjectTitle}>AmiTask</div>
             <ProjectDetail projectId={props.id} close={props.closeProject} open={props.isOpen} />
         </div>
     );
