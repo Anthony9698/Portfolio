@@ -4,10 +4,6 @@ import projectPlaceholder from '../../../assets/Projects/Placeholders/empty.jpg'
 import ProjectDetail from './ProjectDetail/ProjectDetail';
 
 const project = props => {
-    let projectDetail;
-    if (props.isOpen) {
-        projectDetail = <ProjectDetail projectId={props.id} close={props.close} />;
-    }
     return (
         <div className={styles.Project}>
             <div className={styles.Overlay}>
@@ -15,7 +11,7 @@ const project = props => {
                 <div><button onClick={props.show}>Learn More</button></div>
             </div>
             <div><a className={styles.ProjectTitle} href="#">AmiTask</a></div>
-            {projectDetail}
+            <ProjectDetail projectId={props.id} close={props.closeProject} open={props.isOpen} />
         </div>
     );
 }

@@ -24,22 +24,22 @@ const projects = props => {
                         id="1"
                         show={() => props.showProjectDetail('1')}
                         isOpen={currProjectDetail('1')}
-                        close={props.closeProjectDetail} />
+                        closeProject={props.closeProjectDetail} />
                     <Project 
                         id="2"
                         show={() => props.showProjectDetail('2')}
                         isOpen={currProjectDetail('2')}
-                        close={props.closeProjectDetail} />
+                        closeProject={props.closeProjectDetail} />
                     <Project 
                         id="3"
                         show={() => props.showProjectDetail('3')}
                         isOpen={currProjectDetail('3')}
-                        close={props.closeProjectDetail} />
+                        closeProject={props.closeProjectDetail} />
                     <Project 
                         id="4"
                         show={() => props.showProjectDetail('4')}
                         isOpen={currProjectDetail('4')}
-                        close={props.closeProjectDetail} />
+                        closeProject={props.closeProjectDetail} />
                 </div>
             </div>
         </div>

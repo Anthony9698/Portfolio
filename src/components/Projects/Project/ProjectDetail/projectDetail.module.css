@@ -23,9 +23,8 @@
     margin-left: auto;
     margin-right: auto;
     z-index: 1;
-    /* opacity: 0;
-    transform: scale(0);
-    transition: transform 0.2s, opacity 0.2s;  */
+    transition-property: opacity, transform;
+    transition: all, 0.5s ease;
 }
 
 .Carousel {
@@ -43,7 +42,7 @@
     border-bottom: 1px solid #1E1E24;
 }
 
-.Carousel .Close {
+.Carousel .Exit {
     top: 10px;
     right: 10px;
 }
@@ -56,16 +55,26 @@
     right: 10px;
 }
 
-.ImgArrowPrev, .ImgArrowNext, .Close {
+.ImgArrowPrev, .ImgArrowNext, .Exit {
     position: absolute;
     bottom: 10px;
     cursor: pointer;
 }
 
-.ImgArrowPrev path, .ImgArrowNext path, .Close path {
+.ImgArrowPrev path, .ImgArrowNext path, .Exit path {
     transition: fill 0.5s ease;
 }
 
-.ImgArrowPrev:hover path, .ImgArrowNext:hover path, .Close:hover path {
+.ImgArrowPrev:hover path, .ImgArrowNext:hover path, .Exit:hover path {
     fill: #A6A2A3;
+}
+
+.Open {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.Close {
+    opacity: 0;
+    transform: scale(0);
 }
