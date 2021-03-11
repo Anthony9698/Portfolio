@@ -69,6 +69,20 @@
     fill: #A6A2A3;
 }
 
+.MainContent {
+    box-sizing: border-box;
+    border: 3px solid orange;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.Description {
+    box-sizing: border-box;
+    border: 2px solid red;
+    flex: 1;
+}
+
 .Open {
     opacity: 1;
     transform: scale(1);
