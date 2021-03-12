@@ -61,6 +61,13 @@ const projectDetail = props => {
                             including versions of Lorem Ipsum.
                         </p>
                     </div>
+                    <div className={styles.Tags}>
+                        <button>Java</button>
+                        <button>Python</button>
+                        <button>JavaScript</button>
+                        <button>HTML</button>
+                        <button>CSS</button>
+                    </div>
                 </div>
                 <div className={styles.ViewMore}>
                     <button>View Site</button>

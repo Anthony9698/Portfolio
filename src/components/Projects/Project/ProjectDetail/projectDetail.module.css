@@ -78,7 +78,6 @@
 
 .Description {
     box-sizing: border-box;
-    /* border: 2px solid red; */
     flex: 1;
     padding: 16px;
 }
@@ -143,4 +142,19 @@
 
 .ViewMore button:hover {
     background-color: #2D5446;;
+}
+
+.Tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.Tags button {
+    pointer-events: none;
+    font-family: 'Roboto';
+    color: #1E1E24;
+    border: 1px solid #1E1E24;
+    background-color: #E6E1E2;
+    user-select: none;
 }
