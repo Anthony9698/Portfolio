@@ -2,6 +2,7 @@
     padding: 40px;
     height: 100vh;
     position: relative;
+    border: 1px solid green;
 }
 
 .Content {

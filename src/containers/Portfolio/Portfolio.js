@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Home from '../../components/Home/Home';
 import About from '../../components/About/About';
 import Projects from '../../components/Projects/Projects';
+import Contact from '../../components/Contact/Contact';
 import Aux from '../../hoc/Auxiliary/Auxiliary';
 
 class Portfolio extends Component {
@@ -33,6 +34,8 @@ class Portfolio extends Component {
                     currProjectOpen={this.state.currProjectDetailId}
                     showProjectDetail={this.showProjectDetailHandler}
                     closeProjectDetail={this.closeProjectDetailHandler} />
+                <Contact
+                    id="contact" />
             </Aux>
         );
     }

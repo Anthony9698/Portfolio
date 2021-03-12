@@ -1,0 +1,15 @@
+.Contact {
+    padding: 40px;
+    height: 100vh;
+    border: 1px solid blue;
+}
+
+.Title {
+    font-family: 'Roboto';
+    font-size: 3rem;
+    font-weight: normal;
+    color: #1E1E24;
+    margin-top: 0;
+    margin-bottom: 16px;
+    text-align: center;
+}
