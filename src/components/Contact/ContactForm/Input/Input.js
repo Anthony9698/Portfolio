@@ -1,11 +1,17 @@
 import React from 'react';
 import styles from './input.module.css';
 
-const input = props => (
-    <div className={styles.Input}>
-        <label className={styles.Label}>{props.label}</label>
-        <input className={styles.InputElement} type={styles.type} />
-    </div>
-);
+const input = props => {
+    let input = <input className={styles.InputElement} type={styles.type} />;
+    if (props.type === 'textarea') {
+        input = <textarea className={styles.InputElement} rows="6" cols="64" />
+    }
+    return (
+        <div className={styles.Input}>
+            <label className={styles.Label}>{props.label}</label>
+            {input}
+        </div>
+    );
+}
 
 export default input;

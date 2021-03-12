@@ -12,7 +12,7 @@ class ContactForm extends Component {
                 <Input label="Name" type="text" />
                 <Input label="Subject" type="text" />
                 <Input label="Email" type="email" />
-                {/* <Input label="Message" type="text" /> */}
+                <Input label="Message" type="textarea" />
             </form>
         );
     }
