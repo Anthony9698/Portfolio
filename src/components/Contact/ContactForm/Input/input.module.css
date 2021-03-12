@@ -1,0 +1,25 @@
+.Input {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.Label {
+    font-family: 'Roboto';
+    font-size: 1rem;
+    color: #1E1E24;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.InputElement {
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    border: 1px solid #1E1E24;
+    border-radius: 4px;
+    background-color: #E6E1E2;
+    padding: 8px;
+    font-size: 1rem;
+    font-family: 'Roboto';
+}

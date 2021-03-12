@@ -25,7 +25,7 @@ const projects = props => {
                         show={() => props.showProjectDetail('1')}
                         isOpen={currProjectDetail('1')}
                         closeProject={props.closeProjectDetail} />
-                    <Project 
+                    {/* <Project 
                         id="2"
                         show={() => props.showProjectDetail('2')}
                         isOpen={currProjectDetail('2')}
@@ -39,7 +39,7 @@ const projects = props => {
                         id="4"
                         show={() => props.showProjectDetail('4')}
                         isOpen={currProjectDetail('4')}
-                        closeProject={props.closeProjectDetail} />
+                        closeProject={props.closeProjectDetail} /> */}
                 </div>
             </div>
         </div>
