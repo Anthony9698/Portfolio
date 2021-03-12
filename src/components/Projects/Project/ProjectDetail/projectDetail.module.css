@@ -71,7 +71,6 @@
 
 .MainContent {
     box-sizing: border-box;
-    border: 3px solid orange;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -79,7 +78,7 @@
 
 .Description {
     box-sizing: border-box;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     flex: 1;
     padding: 16px;
 }
@@ -94,15 +93,15 @@
     transform: scale(0);
 }
 
-.ProjectTitle {
+.Title {
     font-family: 'Roboto';
     font-size: 1.75rem;
     font-weight: normal;
-    color: #4E937A;
+    color: #2D5446;
     text-align: left;
 }
 
-.ProjectSummary {
+.QuickSummary {
     font-family: 'Roboto';
     font-size: 1.2rem;
     font-weight: lighter;
@@ -110,7 +109,38 @@
     text-align: left;
 }
 
-.BorderBottom {
+.QuickSummary::after {
+    content: "";
+    display: block;
     margin-top: 10px;
-    border-bottom: 1px solid #4E937A;
+    border-bottom: 1px solid #2D5446;
+}
+
+.Summary {
+    font-family: 'Roboto';
+    font-size: 1rem;
+    font-weight: normal;
+    color: #1E1E24;
+    text-align: left;
+}
+
+.ViewMore {
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px;
+}
+
+.ViewMore button {
+    font-family: 'Roboto';
+    font-size: 1rem;
+    color: #E6E1E2;
+    background-color: #4E937A;
+    border: 1px solid #1E1E24;
+    cursor: pointer;
+    outline: none;
+    height: 28px;
+}
+
+.ViewMore button:hover {
+    background-color: #2D5446;;
 }
