@@ -47,7 +47,9 @@ const projectDetail = props => {
                     </svg>
                 </div>
                 <div className={styles.Description}>
-                    1
+                    <div className={styles.ProjectTitle}>Project Title</div>
+                    <div className={styles.ProjectSummary}>An Android Solution for Team Management</div>
+                    <div className={styles.BorderBottom}></div>
                 </div>
             </div>
         </div >
