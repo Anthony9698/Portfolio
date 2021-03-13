@@ -29,13 +29,13 @@ class Portfolio extends Component {
                     id="about" 
                     onAbout={this.aboutVisibilityHandler} 
                     aboutVisible={this.state.aboutVisible} />
-                <Projects 
+                {/* <Projects 
                     id="projects"
                     currProjectOpen={this.state.currProjectDetailId}
                     showProjectDetail={this.showProjectDetailHandler}
                     closeProjectDetail={this.closeProjectDetailHandler} />
                 <Contact
-                    id="contact" />
+                    id="contact" /> */}
             </Aux>
         );
     }

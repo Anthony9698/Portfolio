@@ -1,22 +1,33 @@
+:root {
+    --greeting-font-size: 3.5rem;
+    --summary-font-size: 2rem;
+}
+
 .Home {
     padding-top: 80px;
     padding-bottom: 250px;
     text-align: center;
-    /* border: 5px solid blue; */
-    height: 100vh;
+    height: 60vh;
+    border: 1px solid red;
+}
+
+.ProfilePic {
+    width: 300px;
+    height: 200px;
 }
 
 .Greeting {
     margin: 5px auto;
-    font-size: 4.5rem;
+    font-size: var(--greeting-font-size);
     color: #1E1E24;
 }
 
 .Summary {
-    margin: 5px 20%;
-    font-size: 3rem;
+    font-size: var(--summary-font-size);
     color: #1E1E24;
     opacity: 80%;
+    margin: 4px auto;
+    max-width: 600px;
 }
 
 .SocialLinks {
@@ -24,4 +35,22 @@
     justify-content: space-between;
     width: 110px;
     margin: 20px auto;
+}
+
+@media (max-width: 350px) {
+    .Greeting {
+        font-size: calc(var(--greeting-font-size) * 0.8);
+    }
+    .Summary {
+        font-size: calc(var(--summary-font-size) * 0.8);
+    }
+}
+
+@media (max-width: 250px) {
+    .Greeting {
+        font-size: calc(var(--greeting-font-size) * 0.6);
+    }
+    .Summary {
+        font-size: calc(var(--summary-font-size) * 0.6);
+    }
 }
