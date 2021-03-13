@@ -2,12 +2,16 @@ import React from 'react';
 import styles from './input.module.css';
 
 const input = props => {
-    let input = <input className={styles.InputElement} type={styles.type} />;
+    let input = <input className={styles.InputElement} type={props.type} value={props.value} />;
+    let attachedStyles = styles.Input;
     if (props.type === 'textarea') {
         input = <textarea className={styles.InputElement} rows="6" cols="64" />
     }
+    if (props.type === 'submit') {
+        attachedStyles = [styles.Input, styles.Send].join(' ');
+    }
     return (
-        <div className={styles.Input}>
+        <div className={attachedStyles}>
             <label className={styles.Label}>{props.label}</label>
             {input}
         </div>

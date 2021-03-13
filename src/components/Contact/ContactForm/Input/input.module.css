@@ -23,3 +23,8 @@
     font-size: 1rem;
     font-family: 'Roboto';
 }
+
+.Send {
+    width: 25%;
+    margin: 0 auto;
+}
