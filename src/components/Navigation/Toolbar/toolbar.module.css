@@ -2,7 +2,7 @@
     height: 48px;
     width: 100%;
     position: fixed;
-    background-color: #4E937A;
+    background-color: var(--secondary-color);
     display: flex;
     top: 0;
     left: 0;

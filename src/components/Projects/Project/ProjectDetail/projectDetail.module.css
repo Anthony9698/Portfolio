@@ -133,7 +133,7 @@
     font-family: 'Roboto';
     font-size: 1rem;
     color: #E6E1E2;
-    background-color: #4E937A;
+    background-color: var(--secondary-color);
     border: 1px solid #1E1E24;
     cursor: pointer;
     outline: none;
