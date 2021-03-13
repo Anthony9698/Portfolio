@@ -8,7 +8,6 @@
 
 .ProjectTitle {
     width: 100%;
-    font-family: 'Roboto';
     font-size: 1.5rem;
     font-weight: normal;
     color: #2D5446;
@@ -51,7 +50,6 @@
     cursor: pointer;
     background-color: var(--secondary-color);
     color: var(--primary-color);
-    font-family: 'Roboto';
     font-size: 1.1rem;
     outline: none;
     border: 1.5px solid #1E1E24;

@@ -93,7 +93,6 @@
 }
 
 .Title {
-    font-family: 'Roboto';
     font-size: 1.75rem;
     font-weight: normal;
     color: #2D5446;
@@ -101,7 +100,6 @@
 }
 
 .QuickSummary {
-    font-family: 'Roboto';
     font-size: 1.2rem;
     font-weight: lighter;
     color: #1E1E24;
@@ -116,7 +114,6 @@
 }
 
 .Summary {
-    font-family: 'Roboto';
     font-size: 1rem;
     font-weight: normal;
     color: #1E1E24;
@@ -130,7 +127,6 @@
 }
 
 .ViewMore button {
-    font-family: 'Roboto';
     font-size: 1rem;
     color: var(--primary-color);
     background-color: var(--secondary-color);
@@ -152,7 +148,6 @@
 
 .Tags button {
     pointer-events: none;
-    font-family: 'Roboto';
     color: #1E1E24;
     border: 1px solid #1E1E24;
     background-color: var(--primary-color);

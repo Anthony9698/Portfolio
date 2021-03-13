@@ -8,14 +8,12 @@
 
 .Greeting {
     margin: 5px auto;
-    font-family: 'Roboto';
     font-size: 4.5rem;
     color: #1E1E24;
 }
 
 .Summary {
     margin: 5px 20%;
-    font-family: 'Roboto';
     font-size: 3rem;
     color: #1E1E24;
     opacity: 80%;
