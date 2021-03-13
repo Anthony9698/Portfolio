@@ -30,7 +30,7 @@
 
 .DownloadResume {
     background-color: var(--secondary-color);
-    color: #E6E1E2;
+    color: var(--primary-color);
     width: 170px;
     padding: 10px;
     border-radius: 38px;

@@ -1,11 +1,12 @@
 :root {
+  --primary-color: #E6E1E2;
   --secondary-color: #4E937A;
 }
 
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #E6E1E2;
+  background-color: var(--primary-color);
 }

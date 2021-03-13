@@ -35,7 +35,7 @@
     align-items: center;
     background-color: #55A185;
     float: left;
-    color: #E6E1E2;
+    color: var(--primary-color);
 }
 
 span {

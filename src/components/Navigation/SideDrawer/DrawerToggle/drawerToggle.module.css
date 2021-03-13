@@ -11,7 +11,7 @@
 .DrawerToggle div {
     width: 90%;
     height: 2.5px;
-    background-color: #E6E1E2;
+    background-color: var(--primary-color);
     margin-bottom: 5px;
 }
 
