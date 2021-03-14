@@ -25,12 +25,14 @@
     margin-bottom: 16px;
     font-size: 1.5rem;
     color: #1E1E24;
+    border: 1px solid red;
+    flex-direction: column;
 }
 
 .Description p {
     margin: 0;
     opacity: 80%;
-    width: 50%;
+    max-width: 750px;
 }
 
 .DownloadResume {
@@ -43,6 +45,7 @@
     font-size: 1rem;
     cursor: pointer;
     outline: none;
+    margin-top: 96px;
 }
 
 .DownloadResume:hover {

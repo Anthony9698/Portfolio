@@ -18,8 +18,8 @@ const about = props => (
                 intuitive and efficient.
             </p>
             <Skills isVisible={props.aboutVisible} />
+            <button className={styles.DownloadResume}>Download Resume</button>
         </div>
-        <button className={styles.DownloadResume}>Download Resume</button>
     </div>
 );
 
