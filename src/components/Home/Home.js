@@ -17,7 +17,7 @@ const home = props => (
                 <img src={gitHubLink} alt="github link" />
             </a>
             <a href="https://www.linkedin.com/in/anthony-viera-4b58031aa/">
-                <img src={linkedInLink} alt="linkedIn link" />
+                <img src={linkedInLink} z alt="linkedIn link" />
             </a>
         </div>
     </div>
