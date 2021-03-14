@@ -5,9 +5,10 @@
 
 .Home {
     padding-top: 96px;
-    padding-bottom: 350px;
+    padding-bottom: 336px;
     text-align: center;
-    border: 2px solid orange;
+    box-sizing: border-box;
+    border: 8px solid darkgoldenrod;
 }
 
 .ProfilePic {
