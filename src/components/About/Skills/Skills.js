@@ -9,7 +9,6 @@ const skills = props => {
 
     return (
         <div className={styles.Skills}>
-            <h3>Skills</h3>
             <div className={styles.Graph}>
                 <div className={styles.GraphRow}>
                     <div className={styles.GraphRowLabel}>Java</div>
