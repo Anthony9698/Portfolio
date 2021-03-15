@@ -1,5 +1,4 @@
 .About {
-    border: 4px solid red;
 }
 
 .Title {
@@ -9,16 +8,15 @@
     margin: 0;
     text-align: center;
     padding: 16px;
-    /* border: 1px solid green; */
 }
 
 .Description {
     opacity: 80%;
     font-size: 1.5rem;
     color: #1E1E24;
-    /* border: 1px solid red; */
     max-width: 878px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .DownloadResume {
@@ -36,13 +34,11 @@
 
 .MainContent {
     display: flex;
-    border: 1px solid black;
     flex-direction: column;
     align-items: center;
 }
 
 .Github {
-    border: 3px solid purple;
     padding: 24px;
 }
 

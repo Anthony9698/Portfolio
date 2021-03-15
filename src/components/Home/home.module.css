@@ -7,8 +7,6 @@
     padding-top: 96px;
     padding-bottom: 336px;
     text-align: center;
-    box-sizing: border-box;
-    border: 8px solid darkgoldenrod;
 }
 
 .ProfilePic {
@@ -35,22 +33,4 @@
     justify-content: space-between;
     width: 110px;
     margin: 20px auto;
-}
-
-@media (max-width: 350px) {
-    .Greeting {
-        font-size: calc(var(--greeting-font-size) * 0.8);
-    }
-    .Summary {
-        font-size: calc(var(--summary-font-size) * 0.8);
-    }
-}
-
-@media (max-width: 250px) {
-    .Greeting {
-        font-size: calc(var(--greeting-font-size) * 0.6);
-    }
-    .Summary {
-        font-size: calc(var(--summary-font-size) * 0.6);
-    }
 }

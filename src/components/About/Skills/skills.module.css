@@ -2,7 +2,6 @@
     width: 100%;
     max-width: 750px;
     margin-top: 8px;
-    border: 1px solid orange;
 }
 
 .GraphRow {
@@ -12,15 +11,6 @@
     text-align: end;
     position: relative;
 }
-
-/* .GraphRow:first-child {
-    margin-top: 8px;
-}
-
-.GraphRow:last-child {
-    margin-top: 16px;
-    margin-bottom: 0;
-} */
 
 .GraphRowLabel {
     display: flex;
@@ -60,17 +50,11 @@ span {
     background-color: #417A65;
 }
 
-/* @media (max-width: 992px) {
-    .Skills {
-        width: 100%;
-    }
-}
-
 @media (max-width: 576px) {
     span {
         display: none;
     }
-} */
+}
 
 @keyframes progress {
     from {width: 0;}

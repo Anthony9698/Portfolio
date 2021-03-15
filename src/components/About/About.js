@@ -29,17 +29,6 @@ const about = props => (
                     <ReactTooltip delayShow={50} html />
                 </GitHubCalendar>
             </div>
-            {/* <Skills isVisible={props.aboutVisible} /> */}
-            {/* <button className={styles.DownloadResume}>Download Resume</button> */}
-            {/* <div className={styles.Github}>
-                <GitHubCalendar
-                    username="anthony9698"
-                    blockMargin={2}
-                    blockSize={15}
-                    fontSize={18}>
-                    <ReactTooltip delayShow={50} html />
-                </GitHubCalendar>
-            </div> */}
         </div>
     </div>
 );
