@@ -1,7 +1,7 @@
 .Projects {
-    padding: 40px;
     height: 100vh;
     position: relative;
+    border: 1px solid yellow;
 }
 
 .Content {
@@ -14,9 +14,9 @@
     font-size: 3rem;
     font-weight: normal;
     color: #1E1E24;
-    margin-top: 0;
-    margin-bottom: 16px;
+    margin: 0;
     text-align: center;
+    padding: 16px;
 }
 
 .Description {
