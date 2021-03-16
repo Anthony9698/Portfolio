@@ -1,5 +1,4 @@
 .Projects {
-    height: 100vh;
     position: relative;
     border: 1px solid yellow;
 }
@@ -35,7 +34,11 @@
 }
 
 .ProjectsDisplay {
-    margin-top: 20px;
+    /* border: 1px solid red; */
+    padding-top: 48px;
+    padding-bottom: 128px;
+    padding-left: 48px;
+    padding-right: 48px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;

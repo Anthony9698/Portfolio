@@ -20,26 +20,31 @@ const projects = props => {
                 </p>
                 </div>
                 <div className={styles.ProjectsDisplay}>
-                    <Project 
+                    <Project
                         id="1"
                         show={() => props.showProjectDetail('1')}
                         isOpen={currProjectDetail('1')}
                         closeProject={props.closeProjectDetail} />
-                    {/* <Project 
+                    <Project
                         id="2"
                         show={() => props.showProjectDetail('2')}
                         isOpen={currProjectDetail('2')}
                         closeProject={props.closeProjectDetail} />
-                    <Project 
+                    <Project
                         id="3"
                         show={() => props.showProjectDetail('3')}
                         isOpen={currProjectDetail('3')}
                         closeProject={props.closeProjectDetail} />
-                    <Project 
+                    <Project
                         id="4"
                         show={() => props.showProjectDetail('4')}
                         isOpen={currProjectDetail('4')}
-                        closeProject={props.closeProjectDetail} /> */}
+                        closeProject={props.closeProjectDetail} />
+                    <Project
+                        id="5"
+                        show={() => props.showProjectDetail('5')}
+                        isOpen={currProjectDetail('5')}
+                        closeProject={props.closeProjectDetail} />
                 </div>
             </div>
         </div>
