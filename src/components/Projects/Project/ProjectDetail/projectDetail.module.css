@@ -15,7 +15,7 @@
     height: var(--base-detail-height);
     max-width: var(--max-detail-width);
     min-height: var(--min-detail-height);
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
