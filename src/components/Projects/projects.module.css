@@ -1,5 +1,5 @@
 .Projects {
-    position: relative;
+    position: relative;    
 }
 
 .Content {
@@ -33,7 +33,6 @@
 }
 
 .ProjectsDisplay {
-    /* border: 1px solid red; */
     padding-top: 48px;
     padding-bottom: 128px;
     padding-left: 48px;

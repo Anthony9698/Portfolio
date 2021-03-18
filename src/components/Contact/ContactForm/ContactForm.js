@@ -11,7 +11,7 @@ class ContactForm extends Component {
         event.preventDefault();
     }
     render() {
-        return(
+        return (
             <form className={styles.Form} onSubmit={this.submitHandler}>
                 <Input label="Name" type="text" />
                 <Input label="Subject" type="text" />

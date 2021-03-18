@@ -7,7 +7,7 @@ const navigationItems = props => (
         <NavigationItem link="home" offset={-100}>Home</NavigationItem>
         <NavigationItem link="about" offset={-50}>About</NavigationItem>
         <NavigationItem link="projects" offset={-50}>Projects</NavigationItem>
-        <NavigationItem link="contact">Contact</NavigationItem>        
+        <NavigationItem link="contact" offset={-50}>Contact</NavigationItem>        
     </ul>
 );
 
