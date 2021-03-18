@@ -56,29 +56,35 @@
     bottom: 115px;
 }
 
-.LearnMore button:hover {
-    background-color: #2D5446;
-}
-
 .Overlay:hover .LearnMore {
     opacity: 1;
+}
+
+.LearnMore button:hover {
+    background-color: #2D5446;
 }
 
 .Overlay:hover img {
     filter: brightness(0.5);
 }
 
-.Project:hover .ProjectTitle {
+.Overlay:hover .ProjectTitle {
     bottom: 25%;
     color: var(--primary-color);
 }
 
-@media (max-width: 400px) {
-    .Overlay .LearnMore, .Overlay .ProjectTitle {
-        display: none;
+@media (max-width: 576px) {
+    .Overlay:hover img {
+        filter: none;
     }
 
-    .Overlay:hover img {
-        filter: brightness(1);
+    .Overlay:hover .ProjectTitle {
+        bottom: -36px;
+        color: #2D5446;
+
+    }
+
+    .LearnMore {
+        display: none;
     }
 }
