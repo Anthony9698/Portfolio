@@ -13,7 +13,6 @@ const projectDetail = props => {
         <Aux>
             <Backdrop show={props.open} clicked={props.close} />
             <div className={attachedStyles}>
-                {/* {props.projectId} */}
                 <div className={styles.MainContent}>
                     <div className={styles.Carousel}>
                         <img className={styles.Slide} src={projectPlaceholder} alt="project slide" />

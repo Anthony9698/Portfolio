@@ -43,22 +43,23 @@
 }
 
 .Carousel .Exit {
-    top: 10px;
-    right: 10px;
+    top: 0;
+    right: 0;
 }
 
 .ImgArrowPrev {
-    left: 10px;
+    left: 0;
 }
 
 .ImgArrowNext {
-    right: 10px;
+    right: 0;
 }
 
 .ImgArrowPrev, .ImgArrowNext, .Exit {
     position: absolute;
-    bottom: 10px;
+    bottom: 0px;
     cursor: pointer;
+    padding: 10px;
 }
 
 .ImgArrowPrev path, .ImgArrowNext path, .Exit path {
@@ -137,7 +138,7 @@
 }
 
 .ViewMore button:hover {
-    background-color: #2D5446;;
+    background-color: #2D5446;
 }
 
 .Tags {
