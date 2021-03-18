@@ -17,7 +17,7 @@ const projects = props => {
                 <div className={styles.Description}>
                     <p>I try my best to stay busy whenever I can. Here are
                     some of the projects that I have worked on in the past.
-                </p>
+                    </p>
                 </div>
                 <div className={styles.ProjectsDisplay}>
                     <Project

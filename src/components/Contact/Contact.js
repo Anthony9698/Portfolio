@@ -6,6 +6,9 @@ const contact = props => {
     return (
         <div className={styles.Contact} id={props.id}>
             <div className={styles.Title}>Contact</div>
+            <div className={styles.Description}>
+                Have a question or want to work together?
+            </div>
             <ContactForm />
         </div>
     );
