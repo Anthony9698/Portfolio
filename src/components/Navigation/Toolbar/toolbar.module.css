@@ -2,13 +2,13 @@
     height: 48px;
     width: 100%;
     position: fixed;
-    background-color: var(--secondary-color);
+    background-color: var(--accent-color);
     display: flex;
     top: 0;
     left: 0;
     justify-content: center;
     align-items: center;
-    border-bottom: 2px solid #1E1E24;
+    border-bottom: 2px solid var(--secondary-color);
     z-index: 3;
 }
 

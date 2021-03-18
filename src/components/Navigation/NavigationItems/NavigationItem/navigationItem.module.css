@@ -7,7 +7,7 @@
 }
 
 .NavigationItem:hover, .active {
-    color: #1E1E24 !important;
+    color: var(--secondary-color) !important;
 }
 
 @media (max-width: 576px) {

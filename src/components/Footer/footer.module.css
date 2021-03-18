@@ -1,11 +1,11 @@
 .Footer {
     position: absolute;
     bottom: 0;
-    background-color: var(--secondary-color);
-    color: var(--primary-color-dark);
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
     width: 100%;
     height: 48px;
-    border-top: 2px solid var(--primary-color-dark);
+    border-top: 2px solid var(--secondary-color);
     display: flex;
     justify-content: center;
     align-items: center;

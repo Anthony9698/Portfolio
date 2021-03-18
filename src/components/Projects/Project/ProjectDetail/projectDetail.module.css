@@ -8,7 +8,7 @@
 }
 
 .Detail {
-    border: 0.5px solid #1E1E24;
+    border: 0.5px solid var(--secondary-color);
     background-color: white;
     margin: 0 auto;
     width: var(--base-detail-width);
@@ -39,7 +39,7 @@
     width: 100%;
     height: 100%;
     left: 0;
-    border-bottom: 1px solid #1E1E24;
+    border-bottom: 1px solid var(--secondary-color);
 }
 
 .Carousel .Exit {
@@ -102,7 +102,7 @@
 .QuickSummary {
     font-size: 1.2rem;
     font-weight: lighter;
-    color: #1E1E24;
+    color: var(--secondary-color);
     text-align: left;
 }
 
@@ -116,7 +116,7 @@
 .Summary {
     font-size: 1rem;
     font-weight: normal;
-    color: #1E1E24;
+    color: var(--secondary-color);
     text-align: left;
 }
 
@@ -129,8 +129,8 @@
 .ViewMore button {
     font-size: 1rem;
     color: var(--primary-color);
-    background-color: var(--secondary-color);
-    border: 1px solid #1E1E24;
+    background-color: var(--accent-color);
+    border: 1px solid var(--secondary-color);
     cursor: pointer;
     outline: none;
     height: 28px;
@@ -148,8 +148,8 @@
 
 .Tags button {
     pointer-events: none;
-    color: #1E1E24;
-    border: 1px solid #1E1E24;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
     background-color: var(--primary-color);
     user-select: none;
 }
