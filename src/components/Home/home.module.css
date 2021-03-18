@@ -9,10 +9,10 @@
     position: relative;
 }
 
-.Content {
+.MainContent {
     margin: 0;
     position: absolute;
-    top: 45%;
+    top: 40%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -37,9 +37,36 @@
     max-width: 600px;
 }
 
-.SocialLinks {
+.Start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+
+.Start button {
+    width: 150px;
+    height: 50px;
+    font-size: 1.5rem;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    text-align: left;
+    padding-left: 16px;
+    font-weight: lighter;
+    border-radius: 5%;
+    border: 2px solid var(--secondary-color);
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+}
+
+.Start button:hover {
+    background-color: #2D5446;
+}
+
+/* .SocialLinks {
     display: flex;
     justify-content: space-between;
     width: 110px;
     margin: 20px auto;
-}
+} */
