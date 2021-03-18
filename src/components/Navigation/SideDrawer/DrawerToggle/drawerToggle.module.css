@@ -10,7 +10,7 @@
 
 .DrawerToggle div {
     width: 90%;
-    height: 2.5px;
+    height: 4px;
     background-color: var(--primary-color);
     margin-bottom: 5px;
 }

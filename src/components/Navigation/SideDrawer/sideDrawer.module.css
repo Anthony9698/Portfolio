@@ -9,6 +9,7 @@
     padding: 16px;
     transition: transform 0.3s ease-out;
     z-index: 2;
+    border-bottom: 1px solid var(--secondary-color);
 }
 
 .SideDrawer nav {
