@@ -21,6 +21,7 @@ const about = props => (
             </p>
             <Skills isVisible={props.aboutVisible} />
             <div className={styles.Github}>
+                <div className={styles.Label}>GitHub</div>
                 <GitHubCalendar
                     username="anthony9698"
                     blockMargin={2}
