@@ -51,6 +51,7 @@
     font-size: 1.1rem;
     outline: none;
     border: 1.5px solid var(--secondary-color);
+    border-radius: 5%;
 }
 
 .Overlay:hover .LearnMore button {

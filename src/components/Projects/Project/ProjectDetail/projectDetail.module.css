@@ -129,17 +129,20 @@
 
 .ViewMore button {
     font-size: 1rem;
-    color: var(--primary-color);
-    background-color: var(--accent-color);
-    border: 1px solid var(--secondary-color);
+    color: var(--accent-color);
+    background-color: transparent;
+    border: 1px solid var(--accent-color);
     cursor: pointer;
     outline: none;
-    height: 28px;
-    transition: background-color 0.25s ease;
+    height: 32px;
+    transition-property: background-color, color, border;
+    transition: background-color 0.25s ease, color 0.25s ease, border 0.25s ease;
 }
 
 .ViewMore button:hover {
-    background-color: #2D5446;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    border: 1px solid transparent;
 }
 
 .Tags {
