@@ -75,6 +75,10 @@
     color: var(--primary-color);
 }
 
+.CoverImgWrapper {
+    cursor: pointer;
+}
+
 @media (max-width: 576px) {
     .Overlay:hover img {
         filter: none;

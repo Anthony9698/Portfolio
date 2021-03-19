@@ -159,8 +159,23 @@
     user-select: none;
 }
 
-@media (max-width: 256px) {
+/* @media (max-width: 256px) {
     .Description {
         overflow: auto;
     }
+} */
+
+@media (max-width: 250px) {
+    .Detail {
+        width: auto;
+        border: none;
+        height: max-content;
+        position: absolute;
+    }
 }
+
+/* @media (max-width: 256px) {
+    .Description {
+        overflow: auto;
+    }
+} */

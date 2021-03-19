@@ -7,9 +7,9 @@ const project = props => {
     return (
         <div className={styles.Project}>
             <div className={styles.Overlay}>
-                <a href="/">
+                <div className={styles.CoverImgWrapper} onClick={props.show}>
                     <img className={styles.CoverImg} src={projectPlaceholder} alt="project cover" />
-                </a>
+                </div>
                 <div className={styles.LearnMore}><button onClick={props.show}>Learn More</button></div>
                 <div className={styles.ProjectTitle}>AmiTask</div>
             </div>
