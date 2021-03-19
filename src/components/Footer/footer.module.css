@@ -17,7 +17,6 @@
 .SocialLinks {
     display: flex;
     gap: 16px;
-    padding-top: 32px;
 }
 
 .SocialLinks svg {
@@ -28,4 +27,18 @@
     color: var(--secondary-color);
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.Back {
+    position: relative;
+    bottom: 24px;
+    cursor: pointer;
+}
+
+.Back .Box {
+    transition: fill 0.25s ease;
+}
+
+.Back:hover .Box {
+    fill: #CCC8C9;
 }
