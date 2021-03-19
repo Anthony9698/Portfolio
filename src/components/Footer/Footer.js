@@ -1,10 +1,15 @@
 import React from 'react';
+import { scroller as scroll } from 'react-scroll';
 import styles from './footer.module.css';
 
 const footer = props => {
     return (
         <footer className={styles.Footer}>
-            <div className={styles.Back}>
+            <div className={styles.Back} onClick={() => scroll.scrollTo('home', {
+                duration: 500,
+                smooth: true,
+                offset: -50
+            })}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
                     <g id="Group_140" data-name="Group 140" transform="translate(-2603 -15961)">
                         <g className={styles.Box} id="Rectangle_64" data-name="Rectangle 64" transform="translate(2603 15961)" fill="#e6e1e2" stroke="#1e1e24" stroke-width="2">
