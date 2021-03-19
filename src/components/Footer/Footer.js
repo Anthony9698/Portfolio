@@ -28,7 +28,7 @@ const footer = props => {
                 </svg>
             </div>
             <div className={styles.SocialLinks}>
-                <a href="https://github.com/Anthony9698">
+                <a href="https://github.com/Anthony9698" target="_blank" rel="noreferrer noopener">
                     <svg xmlns="http://www.w3.org/2000/svg" width="35.019" height="33.325" viewBox="0 0 35.019 33.325">
                         <g id="github-sign" transform="translate(-1 -3)">
                             <g id="Group_137" data-name="Group 137" transform="translate(1 3)">
@@ -37,7 +37,7 @@ const footer = props => {
                         </g>
                     </svg>
                 </a>
-                <a href="https://www.linkedin.com/in/anthony-viera-4b58031aa/">
+                <a href="https://www.linkedin.com/in/anthony-viera-4b58031aa/" target="_blank" rel="noreferrer noopener">
                     <svg xmlns="http://www.w3.org/2000/svg" width="35.02" height="33.33" viewBox="0 0 35.02 33.33">
                         <path className={styles.LinkedIn} id="linkedin_1_" data-name="linkedin (1)" d="M32.495,0H2.526A2.467,2.467,0,0,0,0,2.4V30.926a2.467,2.467,0,0,0,2.526,2.4H32.495a2.467,2.467,0,0,0,2.526-2.4V2.4A2.467,2.467,0,0,0,32.495,0ZM12.422,25.193H8.157V12.982h4.264ZM10.29,11.315h-.028A2.161,2.161,0,0,1,7.906,9.205,2.181,2.181,0,0,1,10.318,7.1,2.171,2.171,0,0,1,12.7,9.205a2.18,2.18,0,0,1-2.413,2.109ZM27.8,25.193H23.535V18.66c0-1.642-.617-2.761-2.16-2.761a2.326,2.326,0,0,0-2.188,1.484,2.655,2.655,0,0,0-.14.99v6.819H14.782s.056-11.065,0-12.211h4.264v1.729A4.271,4.271,0,0,1,22.889,12.7c2.806,0,4.909,1.745,4.909,5.5Zm0,0" transform="translate(0)" fill="#1e1e24" />
                     </svg>
