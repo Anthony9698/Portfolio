@@ -11,7 +11,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .SocialLinks {
@@ -23,6 +23,15 @@
     cursor: pointer;
 }
 
+
+.SocialLinks svg:hover path {
+    fill: #2A2A33;
+}
+
+.SocialLinks svg * {
+    transition: fill 0.25s ease;
+}
+
 .CopyRight {
     color: var(--secondary-color);
     margin-top: 10px;
@@ -31,7 +40,7 @@
 
 .Back {
     position: relative;
-    bottom: 24px;
+    bottom: 25px;
     cursor: pointer;
 }
 
