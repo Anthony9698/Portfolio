@@ -13,6 +13,7 @@
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    border: 3px solid orange;
 }
 
 @media (max-width: 576px) {
