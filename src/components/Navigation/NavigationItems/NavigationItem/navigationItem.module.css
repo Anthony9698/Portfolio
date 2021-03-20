@@ -3,6 +3,8 @@
     font-size: 1.125rem;
     color: var(--primary-color);
     cursor: pointer;
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
     transition: color 0.3s ease;
 }
 

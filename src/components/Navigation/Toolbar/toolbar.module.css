@@ -3,11 +3,17 @@
     width: 100%;
     position: fixed;
     background-color: var(--accent-color);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     top: 0;
     left: 0;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-bottom: 2px solid var(--secondary-color);
     z-index: 3;
 }

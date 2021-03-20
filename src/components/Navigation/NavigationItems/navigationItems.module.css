@@ -3,16 +3,24 @@
     top: 25%;
     width: 420px;
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: nowrap;
+    -ms-flex-flow: nowrap;
+        flex-flow: nowrap;
     margin: 0;
     padding: 0;
-    justify-content: space-evenly;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
 }
 
 @media (max-width: 576px) {
     .NavigationItems {
-        flex-flow: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column;
+                flex-flow: column;
         height: 150px;
     }
 }

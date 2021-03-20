@@ -1,4 +1,6 @@
 .SideDrawer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background-color: #8C898A;
     position: fixed;
@@ -7,12 +9,18 @@
     width: 100%;
     text-align: left;
     padding: 16px;
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    transition: -webkit-transform 0.3s ease-out;
+    -o-transition: transform 0.3s ease-out;
     transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
     z-index: 2;
     border-bottom: 1px solid var(--secondary-color);
 }
 
 .SideDrawer nav {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
 }
 
@@ -23,9 +31,13 @@
 }
 
 .Open {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
 }
 
 .Close {
-    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+            transform: translateY(-100%);
 }

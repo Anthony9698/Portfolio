@@ -4,7 +4,11 @@
     max-height: 280px;
     border: 1px solid var(--secondary-color);
     border-radius: 5%;
+    -webkit-transition: -webkit-filter 0.5s ease;
+    transition: -webkit-filter 0.5s ease;
+    -o-transition: filter 0.5s ease;
     transition: filter 0.5s ease;
+    transition: filter 0.5s ease, -webkit-filter 0.5s ease;
 }
 
 .ProjectTitle {
@@ -17,14 +21,22 @@
     position: absolute;
     left: 0;
     bottom: -36px;
+    -webkit-transition-property: color, bottom;
+    -o-transition-property: color, bottom;
     transition-property: color, bottom;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
 
 .Overlay {
     border-radius: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: stretch;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
     position: relative;
 }
 
@@ -33,9 +45,17 @@
     height: 100%;
     width: 100%;
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: opacity 0.5s ease;
+    -o-transition: opacity 0.5s ease;
     transition: opacity 0.5s ease;
 }
 .LearnMore button {
@@ -43,7 +63,11 @@
     height: 35px;
     position: absolute;
     bottom: 10px;
+    -webkit-transition-property: bottom, background-color;
+    -o-transition-property: bottom, background-color;
     transition-property: bottom, background-color;
+    -webkit-transition: bottom 0.5s ease, background-color 0.25s ease;
+    -o-transition: bottom 0.5s ease, background-color 0.25s ease;
     transition: bottom 0.5s ease, background-color 0.25s ease;
     cursor: pointer;
     background-color: var(--accent-color);
@@ -67,7 +91,8 @@
 }
 
 .Overlay:hover img {
-    filter: brightness(0.5);
+    -webkit-filter: brightness(0.5);
+            filter: brightness(0.5);
 }
 
 .Overlay:hover .ProjectTitle {
@@ -81,7 +106,8 @@
 
 @media (max-width: 576px) {
     .Overlay:hover img {
-        filter: none;
+        -webkit-filter: none;
+                filter: none;
     }
 
     .Overlay:hover .ProjectTitle {

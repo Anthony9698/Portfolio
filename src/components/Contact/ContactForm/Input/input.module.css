@@ -1,5 +1,6 @@
 .Input {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     width: 100%;
     margin-bottom: 12px;
 }
@@ -12,7 +13,8 @@
 }
 
 .InputElement {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     width: 100%;
     display: block;
     border: 1px solid var(--secondary-color);
@@ -32,6 +34,8 @@
     border: 1px solid var(--secondary-color);
     color: var(--primary-color);
     cursor: pointer;
+    -webkit-transition: background-color 0.25s ease;
+    -o-transition: background-color 0.25s ease;
     transition: background-color 0.25s ease;
 }
 
