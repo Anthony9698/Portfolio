@@ -33,7 +33,7 @@
 .Summary {
     font-size: var(--summary-font-size);
     color: var(--secondary-color);
-    opacity: 80%;
+    opacity: 0.8;
     margin: 4px auto;
     max-width: 600px;
 }

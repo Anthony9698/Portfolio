@@ -12,7 +12,7 @@ const footer = props => {
             })}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
                     <g id="Group_140" data-name="Group 140" transform="translate(-2603 -15961)">
-                        <g className={styles.Box} id="Rectangle_64" data-name="Rectangle 64" transform="translate(2603 15961)" fill="#e6e1e2" stroke="#1e1e24" stroke-width="2">
+                        <g className={styles.Box} id="Rectangle_64" data-name="Rectangle 64" transform="translate(2603 15961)" fill="#e6e1e2" stroke="#1e1e24" strokeWidth="2">
                             <rect width="50" height="50" rx="5" stroke="none" />
                             <rect x="1" y="1" width="48" height="48" rx="4" fill="none" />
                         </g>
