@@ -25,7 +25,6 @@
 }
 
 .Send {
-    width: 25%;
     margin: 0 auto;
 }
 
@@ -41,4 +40,8 @@
 
 .Send input:hover {
     background-color: #2D5446;
+}
+
+input[type="submit"] {
+    -webkit-appearance: none;
 }
