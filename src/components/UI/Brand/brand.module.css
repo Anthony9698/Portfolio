@@ -1,0 +1,12 @@
+.Brand {
+    position: absolute;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    left: 24px;
+}
+
+@media (max-width: 576px) {
+    .Brand {
+        display: none;
+    }
+}
