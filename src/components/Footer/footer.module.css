@@ -27,11 +27,11 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 16px;
 }
 
 .SocialLinks svg {
     cursor: pointer;
+    padding: 8px;
 }
 
 
