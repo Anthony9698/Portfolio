@@ -6,7 +6,7 @@
     position: fixed;
     top: 50px;
     left: 0;
-    width: 93%;
+    width: 100%;
     text-align: left;
     padding: 16px;
     -webkit-transition: -webkit-transform 0.3s ease-out;
@@ -15,14 +15,11 @@
     transition: transform 0.3s ease-out;
     transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
     z-index: 2;
-    border-bottom: 1px solid var(--secondary-color);
-    border: 3px solid yellow;
+    border-bottom: 2px solid var(--secondary-color);
 }
 
 .SideDrawer nav {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    height: 153px;
 }
 
 @media (min-width: 576px) {
