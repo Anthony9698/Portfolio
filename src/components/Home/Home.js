@@ -13,7 +13,7 @@ const home = props => (
                 concentration in Software Engineering.
             </p>
             <div className={styles.Start}>
-                <button onClick={() => scroll.scrollTo('about', {
+                <button onClick={() => scroll.scrollTo('About', {
                     duration: 500,
                     smooth: true,
                     offset: -50

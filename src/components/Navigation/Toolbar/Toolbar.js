@@ -1,16 +1,15 @@
 import React from 'react';
-import { animateScroll as scroll } from 'react-scroll';
 import styles from './toolbar.module.css';
 import NavigationItems from '../NavigationItems/NavigationItems';
-import Logo from '../NavigationItems/Logo/Logo';
 import DrawerToggle from '../SideDrawer/DrawerToggle/DrawerToggle';
+import ActiveNavText from '../ActiveNavText/ActiveNavText';
 
 const toolbar = props => (
     <header className={styles.Toolbar}>
         <DrawerToggle clicked={props.drawerToggleClicked} drawerOpen={props.sideDrawerOpen} />
-        <Logo clicked={scroll.scrollToTop} />
+        <ActiveNavText currNavLink={props.currNavLink} />
         <nav className={styles.DesktopOnly}>
-            <NavigationItems />
+            <NavigationItems onActiveLink={props.onActiveNavLink} />
         </nav>
     </header>
 );

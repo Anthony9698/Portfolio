@@ -5,7 +5,7 @@ import styles from './footer.module.css';
 const footer = props => {
     return (
         <footer className={styles.Footer}>
-            <div className={styles.Back} onClick={() => scroll.scrollTo('home', {
+            <div className={styles.Back} onClick={() => scroll.scrollTo('Home', {
                 duration: 500,
                 smooth: true,
                 offset: -50

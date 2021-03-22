@@ -27,18 +27,18 @@ class Portfolio extends Component {
         return (
             <Aux>
                 <div className={styles.Portfolio}>
-                    <Home id="home" />
+                    <Home id="Home" />
                     <About
-                        id="about"
+                        id="About"
                         onAbout={this.aboutVisibilityHandler}
                         aboutVisible={this.state.aboutVisible} />
                     <Projects
-                        id="projects"
+                        id="Projects"
                         currProjectOpen={this.state.currProjectDetailId}
                         showProjectDetail={this.showProjectDetailHandler}
                         closeProjectDetail={this.closeProjectDetailHandler} />
                     <Contact
-                        id="contact" />
+                        id="Contact" />
                     <Footer>Anthony Viera © 2021</Footer>
                 </div>
             </Aux>
