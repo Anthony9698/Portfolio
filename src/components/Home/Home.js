@@ -9,8 +9,7 @@ const home = props => (
             <img className={styles.ProfilePic} src={profilePic} alt="profile" />
             <h1 className={styles.Greeting}>Hello, I'm Anthony.</h1>
             <p className={styles.Summary}>
-                I'm a Computer Science Graduate with a
-                concentration in Software Engineering.
+                I'm a CS Graduate with a focus in Software Engineering.
             </p>
             <div className={styles.Start}>
                 <button onClick={() => scroll.scrollTo('About', {

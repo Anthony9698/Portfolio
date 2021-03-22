@@ -1,6 +1,6 @@
 :root {
-    --greeting-font-size: 3.5rem;
-    --summary-font-size: 2rem;
+    --greeting-font-size: 4rem;
+    --summary-font-size: 1.5rem;
 }
 
 .Home {
@@ -55,7 +55,7 @@
     position: relative;
     width: 200px;
     height: 50px;
-    font-size: 1.5rem;
+    font-size: var(--summary-font-size);
     background-color: var(--primary-color);
     color: var(--secondary-color);
     text-align: left;
@@ -103,4 +103,34 @@
     -o-transition: transform 0.5s ease;
     transition: transform 0.5s ease;
     transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+    .Greeting {
+        font-size: calc(var(--greeting-font-size) * .75);
+    }
+
+    .Summary {
+        font-size: calc(var(--summary-font-size) * .75);;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .Greeting {
+        font-size: calc(var(--greeting-font-size) * .8);
+    }
+
+    .Summary {
+        font-size: calc(var(--summary-font-size) * .8);;
+    }
+}
+
+@media (min-width: 992px) {
+    .Greeting {
+        font-size: calc(var(--greeting-font-size) * .9);
+    }
+
+    .Summary {
+        font-size: calc(var(--summary-font-size) * .9);;
+    }
 }
