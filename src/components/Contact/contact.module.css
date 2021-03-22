@@ -3,7 +3,7 @@
 }
 
 .Title {
-    font-size: 3rem;
+    font-size: var(--heading-font-size);
     font-weight: normal;
     color: var(--secondary-color);
     margin: 0;
@@ -13,9 +13,39 @@
 
 .Description {
     opacity: 0.8;
-    font-size: 1.5rem;
+    font-size: var(--sub-heading-font-size);
     color: var(--secondary-color);
     width: 100%;
     margin: 0 auto;
     text-align: center;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+    .Title {
+        font-size: calc(var(--heading-font-size) * .75);
+    }
+
+    .Description {
+        font-size: calc(var(--sub-heading-font-size) * .75);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .Title {
+        font-size: calc(var(--heading-font-size) * .8);
+    }
+
+    .Description {
+        font-size: calc(var(--sub-heading-font-size) * .8);
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .Title {
+        font-size: calc(var(--heading-font-size) * .9);
+    }
+
+    .Description {
+        font-size: calc(var(--sub-heading-font-size) * .9);
+    }
 }
