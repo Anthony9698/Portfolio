@@ -2,6 +2,8 @@
   --primary-color: #E6E1E2;
   --secondary-color: #1E1E24;
   --accent-color: #4E937A;
+  --heading-font-size: 3rem;
+  --sub-heading-font-size: 1.5rem;
 }
 
 body {

@@ -111,7 +111,7 @@
     }
 
     .Summary {
-        font-size: calc(var(--summary-font-size) * .75);;
+        font-size: calc(var(--summary-font-size) * .75);
     }
 }
 
@@ -121,16 +121,16 @@
     }
 
     .Summary {
-        font-size: calc(var(--summary-font-size) * .8);;
+        font-size: calc(var(--summary-font-size) * .8);
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199px) {
     .Greeting {
         font-size: calc(var(--greeting-font-size) * .9);
     }
 
     .Summary {
-        font-size: calc(var(--summary-font-size) * .9);;
+        font-size: calc(var(--summary-font-size) * .9);
     }
 }
