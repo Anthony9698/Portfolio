@@ -13,8 +13,8 @@ const projectSchema = new mongoose.Schema({
         required: true
     },
     tags: {
-        type: Array,
-        required: true
+        type: [String],
+        validate: v => Array.isArray(v) && v.length > 0,
     },
     url: {
         type: String,
