@@ -13,3 +13,5 @@ const db = mongoose.connection;
 db.on('error', error => console.log('Connected to Database'));
 db.once('open', () => console.log('Connected to Database'));
 app.use(express.json);
+
+const ProjectRouter = require('./routes/projects');
