@@ -6,23 +6,34 @@ import Projects from '../../components/Projects/Projects';
 import Contact from '../../components/Contact/Contact';
 import Aux from '../../hoc/Auxiliary/Auxiliary';
 import Footer from '../../components/Footer/Footer';
+import axios from 'axios';
 
 class Portfolio extends Component {
     state = {
         aboutVisible: false,
         currProjectDetailId: false
     }
+
+    componentDidMount = () => {
+        axios.get("/sections?name=home").then(response => {
+            console.log(response);
+        })
+    }
+
     aboutVisibilityHandler = isVisible => {
         if (this.state.aboutVisible !== true) {
             this.setState({ aboutVisible: isVisible });
         }
     }
+
     showProjectDetailHandler = projectId => {
         this.setState({ currProjectDetailId: projectId });
     }
+
     closeProjectDetailHandler = () => {
         this.setState({ currProjectDetailId: false });
     }
+
     render() {
         return (
             <Aux>

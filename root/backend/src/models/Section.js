@@ -12,9 +12,9 @@ const sectionSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    dateUploaded: {
-        type: Date,
-        default: Date.now(),
+    current: {
+        type: Boolean,
+        default: false
     }
 });
 
