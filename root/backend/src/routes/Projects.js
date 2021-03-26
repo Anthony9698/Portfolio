@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Project = require('../models/Project/Project');
+const Project = require('../models/Project');
 
 // Get all projects
 router.get('/', async (req, res) => {
@@ -10,11 +10,6 @@ router.get('/', async (req, res) => {
     } catch (err) {
         res.status(500).json({ message: err.message });
     }
-});
-
-// Getting one
-router.get('/:id', getProject, (req, res) => {
-    res.send(res.project);
 });
 
 async function getProject(req, res, next) {
@@ -30,5 +25,10 @@ async function getProject(req, res, next) {
     res.project = project;
     next();
 }
+
+// Getting one
+router.get('/:id', getProject, (req, res) => {
+    res.send(res.project);
+});
 
 module.exports = router;
