@@ -14,9 +14,12 @@ db.on('error', error => console.log('Connected to Database'));
 db.once('open', () => console.log('Connected to Database...'));
 app.use(express.json());
 
-const projectsRouter = require('./routes/Projects');
 const sectionsRouter = require('./routes/Sections');
-app.use('/projects', projectsRouter);
+const projectsRouter = require('./routes/Projects');
+const skillsRouter = require('./routes/Skills');
+
 app.use('/sections', sectionsRouter);
+app.use('/projects', projectsRouter);
+app.use('/skills', skillsRouter);
 
 app.listen(3001, console.log("Listening on port 3001..."));
