@@ -10,15 +10,10 @@ const about = props => (
         className={styles.About}
         id={props.id}>
         <VizSensor onChange={props.onAbout}>
-            <h2 className={styles.Title}>About Me</h2>
+            <h2 className={styles.Title}>{props.title}</h2>
         </VizSensor>
         <div className={styles.MainContent}>
-            <p className={styles.Description}>
-                I love programming and learning new technologies
-                to solve complicated problems. I take pride in
-                developing elegant software solutions that are
-                intuitive and efficient.
-            </p>
+            <p className={styles.Description}>{props.description}</p>
             <Skills isVisible={props.aboutVisible} />
             <div className={styles.Github}>
                 <div className={styles.Label}>GitHub</div>

@@ -5,10 +5,8 @@ import ContactForm from './ContactForm/ContactForm';
 const contact = props => {
     return (
         <div className={styles.Contact} id={props.id}>
-            <div className={styles.Title}>Contact</div>
-            <div className={styles.Description}>
-                Have a question or want to work together?
-            </div>
+            <div className={styles.Title}>{props.title}</div>
+            <div className={styles.Description}>{props.description}</div>
             <ContactForm />
         </div>
     );

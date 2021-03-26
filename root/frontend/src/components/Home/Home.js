@@ -7,10 +7,8 @@ const home = props => (
     <div className={styles.Home} id={props.id}>
         <div className={styles.MainContent}>
             <img className={styles.ProfilePic} src={profilePic} alt="profile" />
-            <h1 className={styles.Greeting}>Hello, I'm Anthony.</h1>
-            <p className={styles.Summary}>
-                I'm a CS Graduate with a focus in Software Engineering.
-            </p>
+            <h1 className={styles.Greeting}>{props.title}</h1>
+            <p className={styles.Summary}>{props.description}</p>
             <div className={styles.Start}>
                 <button onClick={() => scroll.scrollTo('About', {
                     duration: 500,

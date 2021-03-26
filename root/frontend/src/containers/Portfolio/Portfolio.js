@@ -11,13 +11,39 @@ import axios from 'axios';
 class Portfolio extends Component {
     state = {
         aboutVisible: false,
-        currProjectDetailId: false
+        currProjectDetailId: false,
+        sections: {
+            home: {
+                title: "",
+                description: ""
+            },
+            about: {
+                title: "",
+                description: ""
+            },
+            projects: {
+                title: "",
+                description: ""
+            },
+            contact: {
+                title: "",
+                description: ""
+            },
+        },
     }
 
     componentDidMount = () => {
-        axios.get("/sections?name=home").then(response => {
-            console.log(response);
-        })
+        const sections = JSON.parse(JSON.stringify(this.state.sections));
+        Object.keys(sections).forEach((section) => {
+            let sectionRoute = '/sections?name=' + section;
+            axios.get(sectionRoute)
+                .then(res => {
+                    sections[section].title = res.data.title;
+                    sections[section].description = res.data.description;
+                    this.setState({ sections: JSON.parse(JSON.stringify(sections)) });
+                });
+        });
+
     }
 
     aboutVisibilityHandler = isVisible => {
@@ -38,18 +64,27 @@ class Portfolio extends Component {
         return (
             <Aux>
                 <div className={styles.Portfolio}>
-                    <Home id="Home" />
+                    <Home 
+                        id="Home" 
+                        title={this.state.sections.home.title}
+                        description={this.state.sections.home.description} />
                     <About
                         id="About"
                         onAbout={this.aboutVisibilityHandler}
-                        aboutVisible={this.state.aboutVisible} />
+                        aboutVisible={this.state.aboutVisible}
+                        title={this.state.sections.about.title}
+                        description={this.state.sections.about.description} />
                     <Projects
                         id="Projects"
                         currProjectOpen={this.state.currProjectDetailId}
                         showProjectDetail={this.showProjectDetailHandler}
-                        closeProjectDetail={this.closeProjectDetailHandler} />
+                        closeProjectDetail={this.closeProjectDetailHandler}
+                        title={this.state.sections.projects.title}
+                        description={this.state.sections.projects.description} />
                     <Contact
-                        id="Contact" />
+                        id="Contact"
+                        title={this.state.sections.contact.title}
+                        description={this.state.sections.contact.description} />
                     <Footer>Anthony Viera © 2021</Footer>
                 </div>
             </Aux>

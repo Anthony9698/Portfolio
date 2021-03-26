@@ -12,12 +12,10 @@ const projects = props => {
 
     return (
         <div className={styles.Projects} id={props.id}>
-            <div className={styles.Title}>Projects</div>
+            <div className={styles.Title}>{props.title}</div>
             <div className={styles.Content}>
                 <div className={styles.Description}>
-                    <p>I try my best to stay busy whenever I can. Here are
-                    some of the projects that I have worked on in the past.
-                    </p>
+                    <p>{props.description}</p>
                 </div>
                 <div className={styles.ProjectsDisplay}>
                     <Project
