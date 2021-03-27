@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import styles from './carousel.module.css';
-import projectPlaceholder from '../../../../assets/Projects/Placeholders/empty.jpg';
+import ImageSlide from '../../../../components/Projects/Project/ProjectDetail/Carousel/ImageSlide/ImageSlide';
 
 class Carousel extends Component {
     render() {
         return (
             <div className={styles.Carousel}>
-                <img className={styles.Slide} src={projectPlaceholder} alt="project slide" />
+                <ImageSlide url={this.props.imageUrl} />
                 <svg className={styles.ImgArrowPrev} xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
                     <path
                         id="Path_43"
