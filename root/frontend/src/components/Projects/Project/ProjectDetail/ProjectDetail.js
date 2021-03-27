@@ -50,32 +50,23 @@ const projectDetail = props => {
                         </svg>
                     </div>
                     <div className={styles.Description}>
-                        <div className={styles.Title}>Project Title</div>
-                        <div className={styles.QuickSummary}>An Android Solution for Team Management</div>
-                        <div className={styles.Summary}>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                when an unknown printer took a galley of type and scrambled it to make a type
-                                specimen book. It has survived not only five centuries, but also the leap into
-                                electronic typesetting, remaining essentially unchanged. It was popularised in
-                                the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                                and more recently with desktop publishing software like Aldus PageMaker
-                                including versions of Lorem Ipsum.
-                        </p>
-                        </div>
+                        <div className={styles.Title}>{props.title}</div>
+                        <div className={styles.QuickSummary}>{props.summary}</div>
+                        <div className={styles.Summary}><p>{props.description}</p></div>
                         <div className={styles.TagContainer}>
                             <div className={styles.Tags}>
-                                <button>Java</button>
-                                <button>Python</button>
-                                <button>JavaScript</button>
-                                <button>HTML</button>
-                                <button>CSS</button>
+                                {props.tags.map((tag, index) => <button key={index}>{tag}</button>)}
                             </div>
                         </div>
 
                         <div className={styles.ViewMore}>
-                            <button>View Site</button>
+                            {props.url ?
+                                <a
+                                    href={props.url}
+                                    target="_blank"
+                                    rel="noreferrer noopener">
+                                    <button>View Site</button>
+                                </a> : null}
                         </div>
                     </div>
                 </div>

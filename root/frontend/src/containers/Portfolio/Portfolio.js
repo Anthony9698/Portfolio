@@ -30,12 +30,14 @@ class Portfolio extends Component {
                 description: ""
             },
         },
-        skills: []
+        skills: [],
+        projects: []
     }
 
     componentDidMount = () => {
         this.getAllSectionInfo();
         this.getAllSkills();
+        this.getAllProjects();
     }
 
     aboutVisibilityHandler = isVisible => {
@@ -66,9 +68,16 @@ class Portfolio extends Component {
     }
 
     getAllSkills = () => {
-        axios.get("/skills")
+        axios.get('/skills')
             .then(res => {
                 this.setState({ skills: res.data });
+            });
+    }
+
+    getAllProjects = () => {
+        axios.get('/projects')
+            .then(res => {
+                this.setState({ projects: res.data });
             });
     }
 
@@ -93,7 +102,8 @@ class Portfolio extends Component {
                         showProjectDetail={this.showProjectDetailHandler}
                         closeProjectDetail={this.closeProjectDetailHandler}
                         title={this.state.sections.projects.title}
-                        description={this.state.sections.projects.description} />
+                        description={this.state.sections.projects.description}
+                        projects={[...this.state.projects]} />
                     <Contact
                         id="Contact"
                         title={this.state.sections.contact.title}

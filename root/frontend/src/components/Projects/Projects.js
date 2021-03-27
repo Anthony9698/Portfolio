@@ -10,39 +10,28 @@ const projects = props => {
         return false;
     }
 
+    let projects = props.projects.map(project => {
+        return <Project
+            key={project._id}
+            id={project._id}
+            title={project.title}
+            summary={project.summary}
+            description={project.description}
+            imageAlbum={project.imageAlbum}
+            tags={project.tags}
+            url={project.url}
+            show={() => props.showProjectDetail(project._id)}
+            isOpen={currProjectDetail(project._id)}
+            closeProject={props.closeProjectDetail} />;
+    });
+
     return (
         <div className={styles.Projects} id={props.id}>
             <div className={styles.Title}>{props.title}</div>
             <div className={styles.Content}>
-                <div className={styles.Description}>
-                    <p>{props.description}</p>
-                </div>
+                <div className={styles.Description}><p>{props.description}</p></div>
                 <div className={styles.ProjectsDisplay}>
-                    <Project
-                        id="1"
-                        show={() => props.showProjectDetail('1')}
-                        isOpen={currProjectDetail('1')}
-                        closeProject={props.closeProjectDetail} />
-                    <Project
-                        id="2"
-                        show={() => props.showProjectDetail('2')}
-                        isOpen={currProjectDetail('2')}
-                        closeProject={props.closeProjectDetail} />
-                    <Project
-                        id="3"
-                        show={() => props.showProjectDetail('3')}
-                        isOpen={currProjectDetail('3')}
-                        closeProject={props.closeProjectDetail} />
-                    <Project
-                        id="4"
-                        show={() => props.showProjectDetail('4')}
-                        isOpen={currProjectDetail('4')}
-                        closeProject={props.closeProjectDetail} />
-                    <Project
-                        id="5"
-                        show={() => props.showProjectDetail('5')}
-                        isOpen={currProjectDetail('5')}
-                        closeProject={props.closeProjectDetail} />
+                    {projects}
                 </div>
             </div>
         </div>

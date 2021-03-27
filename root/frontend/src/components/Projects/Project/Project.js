@@ -11,9 +11,18 @@ const project = props => {
                     <img className={styles.CoverImg} src={projectPlaceholder} alt="project cover" />
                 </div>
                 <div className={styles.LearnMore}><button onClick={props.show}>Learn More</button></div>
-                <div className={styles.ProjectTitle}>AmiTask</div>
+                <div className={styles.ProjectTitle}>{props.title}</div>
             </div>
-            <ProjectDetail projectId={props.id} close={props.closeProject} open={props.isOpen} />
+            <ProjectDetail
+                projectId={props.id}
+                close={props.closeProject}
+                open={props.isOpen}
+                title={props.title}
+                summary={props.summary}
+                description={props.description}
+                imageAlbum={props.imageAlbum}
+                tags={props.tags}
+                url={props.url} />
         </div>
     );
 }
