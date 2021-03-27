@@ -68,7 +68,6 @@ class Portfolio extends Component {
     getAllSkills = () => {
         axios.get("/skills")
             .then(res => {
-                console.log("--->")
                 this.setState({ skills: res.data });
             });
     }

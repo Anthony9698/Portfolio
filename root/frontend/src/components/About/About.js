@@ -14,7 +14,7 @@ const about = props => (
         </VizSensor>
         <div className={styles.MainContent}>
             <p className={styles.Description}>{props.description}</p>
-            <Skills isVisible={props.aboutVisible} />
+            <Skills isVisible={props.aboutVisible} skills={props.skills} />
             <div className={styles.Github}>
                 <div className={styles.Label}>GitHub</div>
                 <GitHubCalendar

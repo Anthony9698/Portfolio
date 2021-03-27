@@ -7,8 +7,8 @@ const skill = props => {
         attachedStyles = [styles.Bar, styles.BarAnimation];
     }
     return (
-        <div key={props.id} className={styles.Skill}>
-            <div className={styles.Label}>{props.children}</div>
+        <div className={styles.Skill}>
+            <div className={styles.Label}>{props.label}</div>
             <div className={styles.Confidence}>
                 <div className={attachedStyles.join(' ')} style={{ '--width': `${props.confidence}%` }}></div>
             </div>
