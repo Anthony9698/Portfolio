@@ -3,25 +3,3 @@
     height: var(--base-carousel-height);
     max-height: var(--max-carousel-height);
 }
-
-.Carousel .Exit {
-    top: 0;
-    right: 0;
-}
-
-.Exit {
-    position: absolute;
-    bottom: 0px;
-    cursor: pointer;
-    padding: 10px;
-}
-
-.Exit path {
-    -webkit-transition: fill 0.25s ease;
-    -o-transition: fill 0.25s ease;
-    transition: fill 0.25s ease;
-}
-
-.Exit:hover path {
-    fill: #A6A2A3 !important;
-}
