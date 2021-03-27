@@ -1,27 +1,27 @@
-.Carousel {
-    position: relative;
-    height: var(--base-carousel-height);
-    max-height: var(--max-carousel-height);
-}
-
-.Carousel .Exit {
-    top: 0;
-    right: 0;
-}
-
-.Exit {
+.Arrow {
     position: absolute;
     bottom: 0px;
     cursor: pointer;
     padding: 10px;
 }
 
-.Exit path {
+.Arrow path {
     -webkit-transition: fill 0.25s ease;
     -o-transition: fill 0.25s ease;
     transition: fill 0.25s ease;
 }
 
-.Exit:hover path {
+.Arrow:hover path {
     fill: #A6A2A3 !important;
+}
+
+.Back {
+    left: 0;
+}
+
+.Next {
+    right: 0;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
