@@ -19,7 +19,7 @@ class Portfolio extends Component {
             },
             about: {
                 title: "",
-                description: ""
+                description: "",
             },
             projects: {
                 title: "",
@@ -30,20 +30,12 @@ class Portfolio extends Component {
                 description: ""
             },
         },
+        skills: []
     }
 
     componentDidMount = () => {
-        const sections = JSON.parse(JSON.stringify(this.state.sections));
-        Object.keys(sections).forEach((section) => {
-            let sectionRoute = '/sections?name=' + section;
-            axios.get(sectionRoute)
-                .then(res => {
-                    sections[section].title = res.data.title;
-                    sections[section].description = res.data.description;
-                    this.setState({ sections: JSON.parse(JSON.stringify(sections)) });
-                });
-        });
-
+        this.getAllSectionInfo();
+        this.getAllSkills();
     }
 
     aboutVisibilityHandler = isVisible => {
@@ -60,12 +52,33 @@ class Portfolio extends Component {
         this.setState({ currProjectDetailId: false });
     }
 
+    getAllSectionInfo = () => {
+        const sections = JSON.parse(JSON.stringify(this.state.sections));
+        Object.keys(sections).forEach((section) => {
+            let sectionRoute = '/sections?name=' + section;
+            axios.get(sectionRoute)
+                .then(res => {
+                    sections[section].title = res.data.title;
+                    sections[section].description = res.data.description;
+                    this.setState({ sections: JSON.parse(JSON.stringify(sections)) });
+                });
+        });
+    }
+
+    getAllSkills = () => {
+        axios.get("/skills")
+            .then(res => {
+                console.log("--->")
+                this.setState({ skills: res.data });
+            });
+    }
+
     render() {
         return (
             <Aux>
                 <div className={styles.Portfolio}>
-                    <Home 
-                        id="Home" 
+                    <Home
+                        id="Home"
                         title={this.state.sections.home.title}
                         description={this.state.sections.home.description} />
                     <About
@@ -73,7 +86,8 @@ class Portfolio extends Component {
                         onAbout={this.aboutVisibilityHandler}
                         aboutVisible={this.state.aboutVisible}
                         title={this.state.sections.about.title}
-                        description={this.state.sections.about.description} />
+                        description={this.state.sections.about.description}
+                        skills={[...this.state.skills]} />
                     <Projects
                         id="Projects"
                         currProjectOpen={this.state.currProjectDetailId}
