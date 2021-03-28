@@ -10,7 +10,13 @@ const arrow = props => {
         attachedStyles = [styles.Arrow, styles.Next].join(' ');
     }
     return (
-        <svg className={attachedStyles} xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+        <svg 
+            className={attachedStyles}
+            onClick={props.clicked} 
+            xmlns="http://www.w3.org/2000/svg" 
+            width="36" 
+            height="36" 
+            viewBox="0 0 36 36">
             <path
                 id="Path_43"
                 fill="#E6E1E2"

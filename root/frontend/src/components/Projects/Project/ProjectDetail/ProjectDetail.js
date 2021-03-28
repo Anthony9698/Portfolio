@@ -14,7 +14,7 @@ const projectDetail = props => {
             <Backdrop show={props.open} clicked={props.close} />
             <div className={attachedStyles}>
                 <div className={styles.MainContent}>
-                    <Carousel closeProjectDetail={props.close} />
+                    <Carousel closeProjectDetail={props.close} imageAlbum={props.imageAlbum} />
                     <div className={styles.Description}>
                         <div className={styles.Title}>{props.title}</div>
                         <div className={styles.QuickSummary}>{props.summary}</div>
