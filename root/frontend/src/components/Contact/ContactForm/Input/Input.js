@@ -7,9 +7,6 @@ const input = props => {
     if (props.type === 'textarea') {
         input = <textarea className={styles.InputElement} rows="6" cols="64" />
     }
-    if (props.type === 'submit') {
-        attachedStyles = [styles.Input, styles.Send].join(' ');
-    }
     return (
         <div className={attachedStyles}>
             <label className={styles.Label}>{props.label}</label>

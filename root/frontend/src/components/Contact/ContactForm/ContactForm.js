@@ -12,12 +12,13 @@ class ContactForm extends Component {
     }
     render() {
         return (
-            <form className={styles.Form} onSubmit={this.submitHandler}>
+            <form className={styles.Form} onSubmit={this.submitHandler} method="POST">
                 <Input label="Name" type="text" />
                 <Input label="Subject" type="text" />
                 <Input label="Email" type="email" />
                 <Input label="Message" type="textarea" />
-                <Input type="submit" value="Send" />
+                {/* <Input type="submit" value="Send" /> */}
+                <button className={styles.Send} type="submit">Send</button>
             </form>
         );
     }
