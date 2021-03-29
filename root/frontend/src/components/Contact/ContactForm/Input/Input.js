@@ -2,10 +2,10 @@ import React from 'react';
 import styles from './input.module.css';
 
 const input = props => {
-    let input = <input className={styles.InputElement} type={props.type} value={props.value} />;
+    let input = <input className={styles.InputElement} type={props.type} value={props.value} required />;
     let attachedStyles = styles.Input;
     if (props.type === 'textarea') {
-        input = <textarea className={styles.InputElement} rows="6" cols="64" />
+        input = <textarea className={styles.InputElement} rows="6" cols="64" required />
     }
     return (
         <div className={attachedStyles}>
