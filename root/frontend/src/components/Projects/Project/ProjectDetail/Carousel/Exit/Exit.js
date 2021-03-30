@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './close.module.css';
+import styles from './exit.module.css';
 
-const close = props => (
+const exit = props => (
     <svg className={styles.Exit} onClick={props.clicked} xmlns="http://www.w3.org/2000/svg" width="26.995" height="24" viewBox="0 0 26.995 24">
         <g id="Group_134" data-name="Group 134" transform="translate(-1754 -19292)">
             <g id="Group_133" data-name="Group 133">
@@ -19,4 +19,4 @@ const close = props => (
         </g>
     </svg>
 );
-export default close;
+export default exit;

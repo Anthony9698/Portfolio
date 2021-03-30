@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styles from './carousel.module.css';
 import ImageSlide from '../../../../components/Projects/Project/ProjectDetail/Carousel/ImageSlide/ImageSlide';
 import Arrow from '../../../../components/Projects/Project/ProjectDetail/Carousel/Arrow/Arrow';
-import Close from '../../../../components/Projects/Project/ProjectDetail/Carousel/Close/Close';
+import Exit from '../../../../components/Projects/Project/ProjectDetail/Carousel/Exit/Exit';
 
 class Carousel extends Component {
     state = {
@@ -38,7 +38,7 @@ class Carousel extends Component {
                 <ImageSlide url={this.props.imageAlbum[this.state.currSlideIndex]} />
                 <Arrow direction="back" clicked={() => this.goToSlide(-1)} />
                 <Arrow direction="next" clicked={() => this.goToSlide(1)} />
-                <Close clicked={this.props.closeProjectDetail} />
+                <Exit clicked={this.props.closeProjectDetail} />
             </div>
         );
     }
