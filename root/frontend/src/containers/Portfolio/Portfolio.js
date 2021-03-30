@@ -31,13 +31,15 @@ class Portfolio extends Component {
             },
         },
         skills: [],
-        projects: []
+        projects: [],
+        profilePicUrl: ""
     }
 
     componentDidMount = () => {
         this.getAllSectionInfo();
         this.getAllSkills();
         this.getAllProjects();
+        this.getProfilePic();
     }
 
     aboutVisibilityHandler = isVisible => {
@@ -81,6 +83,13 @@ class Portfolio extends Component {
             });
     }
 
+    getProfilePic = () => {
+        axios.get('/profiles?current=true')
+            .then(res => {
+                this.setState({ profilePicUrl: res.data[0].url });
+            });
+    }
+
     render() {
         return (
             <Aux>
@@ -88,7 +97,8 @@ class Portfolio extends Component {
                     <Home
                         id="Home"
                         title={this.state.sections.home.title}
-                        description={this.state.sections.home.description} />
+                        description={this.state.sections.home.description}
+                        profilePicSrc={this.state.profilePicUrl} />
                     <About
                         id="About"
                         onAbout={this.aboutVisibilityHandler}

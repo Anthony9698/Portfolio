@@ -4,10 +4,11 @@ import styles from './home.module.css';
 import { scroller as scroll } from 'react-scroll';
 
 const home = props => {
+    console.log(props.profilePicSrc);
     return (
         <div className={styles.Home} id={props.id}>
             <div className={styles.MainContent}>
-                <img className={styles.ProfilePic} src={profilePic} alt="profile" />
+                <img className={styles.ProfilePic} src={props.profilePicSrc} alt="profile" />
                 <h1 className={styles.Greeting}>{props.title}</h1>
                 <p className={styles.Summary}>{props.description}</p>
                 <div className={styles.Start}>

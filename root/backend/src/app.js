@@ -26,6 +26,7 @@ const sectionsRouter = require('./routes/Sections');
 const projectsRouter = require('./routes/Projects');
 const skillsRouter = require('./routes/Skills');
 const contactRouter = require('./routes/Contact');
+const profileRouter = require('./routes/Profiles');
 
 app.use(express.json());
 app.use(cors());
@@ -33,5 +34,6 @@ app.use('/sections', sectionsRouter);
 app.use('/projects', projectsRouter);
 app.use('/skills', skillsRouter);
 app.use('/contact', contactRouter);
+app.use('/profiles', profileRouter);
 
 app.listen(3001, console.log("Listening on port 3001..."));
