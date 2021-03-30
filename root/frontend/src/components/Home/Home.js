@@ -1,5 +1,4 @@
 import React from 'react';
-import profilePic from '../../assets/Home/Profile/ginger.png';
 import styles from './home.module.css';
 import { scroller as scroll } from 'react-scroll';
 
