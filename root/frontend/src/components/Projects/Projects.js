@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './projects.module.css';
 import Project from './Project/Project';
+import Spinner from '../UI/Spinner/Spinner';
 
 const projects = props => {
     const currProjectDetail = projectId => {
@@ -10,20 +11,24 @@ const projects = props => {
         return false;
     }
 
-    let projects = props.projects.map(project => {
-        return <Project
-            key={project._id}
-            id={project._id}
-            title={project.title}
-            summary={project.summary}
-            description={project.description}
-            imageAlbum={project.imageAlbum}
-            tags={project.tags}
-            url={project.url}
-            show={() => props.showProjectDetail(project._id)}
-            isOpen={currProjectDetail(project._id)}
-            closeProject={props.closeProjectDetail} />;
-    });
+    let projects = <Spinner />;
+
+    if (props.projects) {
+        projects = props.projects.map(project => {
+            return <Project
+                key={project._id}
+                id={project._id}
+                title={project.title}
+                summary={project.summary}
+                description={project.description}
+                imageAlbum={project.imageAlbum}
+                tags={project.tags}
+                url={project.url}
+                show={() => props.showProjectDetail(project._id)}
+                isOpen={currProjectDetail(project._id)}
+                closeProject={props.closeProjectDetail} />;
+        });
+    }
 
     return (
         <div className={styles.Projects} id={props.id}>
