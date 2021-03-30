@@ -1,10 +1,8 @@
 import React from 'react';
-import profilePic from '../../assets/Home/Profile/ginger.png';
 import styles from './home.module.css';
 import { scroller as scroll } from 'react-scroll';
 
 const home = props => {
-    console.log(props.profilePicSrc);
     return (
         <div className={styles.Home} id={props.id}>
             <div className={styles.MainContent}>
