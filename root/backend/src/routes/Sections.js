@@ -5,7 +5,6 @@ const Section = require('../models/Section');
 // Get all sections
 router.get('/', async (req, res) => {
     try {
-        // const sections = await Section.find();
         let sections;
         let queryParams = req.query;
         if (queryParams.name) {

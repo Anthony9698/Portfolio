@@ -6,6 +6,7 @@ import axios from 'axios';
 class ContactForm extends Component {
     state = {
         name: "",
+        subject: "",
         email: "",
         message: "",
         status: "Send"
@@ -20,7 +21,7 @@ class ContactForm extends Component {
         }).then(res => {
             if (res.data.status === "sent") {
                 alert("Message Sent");
-                this.setState({ name: "", email: "", message: "", status: "Send" });
+                this.setState({ name: "", email: "", message: "", subject: "", status: "Send" });
             } else if (res.data.status === "failed") {
                 alert("Message Failed");
             }
@@ -42,21 +43,25 @@ class ContactForm extends Component {
         return (
             <form className={styles.Form} onSubmit={this.submitHandler} method="POST">
                 <Input
+                    id="name"
                     label="Name"
                     type="text"
                     value={this.state.name}
                     changed={this.inputChangedHandler} />
                 <Input
+                    id="subject"
                     label="Subject"
                     type="text"
                     value={this.state.subject}
                     changed={this.inputChangedHandler} />
                 <Input
+                    id="email"
                     label="Email"
                     type="email"
                     value={this.state.email}
                     changed={this.inputChangedHandler} />
                 <Input
+                    id="message"
                     label="Message"
                     type="textarea"
                     value={this.state.message}
