@@ -15,7 +15,7 @@
             justify-content: space-evenly;
 }
 
-@media (max-width: 576px) {
+@media (min-width: 0px) and (max-width: 575px) {
     .NavigationItems {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -25,5 +25,20 @@
         position: absolute;
         top: 16px;
         left: 16px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .NavigationItems {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column;
+                flex-flow: column;
+        height: 150px;
+        width: 100%;
+        position: absolute;
+        top: 16px;
+        left: 0px;
+        align-items: center;
     }
 }

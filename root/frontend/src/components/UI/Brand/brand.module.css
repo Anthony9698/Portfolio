@@ -5,7 +5,7 @@
     left: 24px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .Brand {
         display: none;
     }
