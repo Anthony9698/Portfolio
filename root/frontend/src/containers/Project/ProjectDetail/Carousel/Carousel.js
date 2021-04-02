@@ -35,7 +35,7 @@ class Carousel extends Component {
     render() {
         return (
             <div className={styles.Carousel}>
-                <ImageSlide url={this.props.imageAlbum[this.state.currSlideIndex]} />
+                <ImageSlide url={this.props.imageAlbum ? this.props.imageAlbum[this.state.currSlideIndex] : null} />
                 <Arrow direction="back" clicked={() => this.goToSlide(-1)} />
                 <Arrow direction="next" clicked={() => this.goToSlide(1)} />
                 <Exit clicked={this.props.closeProjectDetail} />

@@ -5,9 +5,11 @@ import ProjectDetail from './ProjectDetail/ProjectDetail';
 
 const project = props => {
     let coverImg = projectPlaceholder;
-    if (props.imageAlbum[0]) {
+    
+    if (props.imageAlbum && props.imageAlbum[0]) {
         coverImg = props.imageAlbum[0];
     }
+	
     return (
         <div className={styles.Project}>
             <div className={styles.Overlay}>

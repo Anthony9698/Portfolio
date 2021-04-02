@@ -9,6 +9,10 @@ const projectDetail = props => {
     if (props.open) {
         attachedStyles = [styles.Detail, styles.Open].join(' ');
     }
+    let tags;
+    if (props.tags) {
+	tags = props.tags.map((tag, index) => <button key={index}>{tag}</button>);
+    }
     return (
         <Aux>
             <Backdrop show={props.open} clicked={props.close} />
@@ -21,7 +25,7 @@ const projectDetail = props => {
                         <div className={styles.Summary}><p>{props.description}</p></div>
                         <div className={styles.TagContainer}>
                             <div className={styles.Tags}>
-                                {props.tags.map((tag, index) => <button key={index}>{tag}</button>)}
+                                {tags}
                             </div>
                         </div>
 

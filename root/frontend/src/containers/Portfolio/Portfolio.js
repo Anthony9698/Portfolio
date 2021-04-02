@@ -59,7 +59,7 @@ class Portfolio extends Component {
     getAllSectionInfo = () => {
         const sections = JSON.parse(JSON.stringify(this.state.sections));
         Object.keys(sections).forEach((section) => {
-            let sectionRoute = '/sections?name=' + section;
+            let sectionRoute = 'api/sections?name=' + section;
             axios.get(sectionRoute)
                 .then(res => {
                     sections[section].title = res.data.title;
@@ -70,21 +70,21 @@ class Portfolio extends Component {
     }
 
     getAllSkills = () => {
-        axios.get('/skills')
+        axios.get('api/skills')
             .then(res => {
                 this.setState({ skills: res.data });
             });
     }
 
     getAllProjects = () => {
-        axios.get('/projects')
+        axios.get('api/projects')
             .then(res => {
                 this.setState({ projects: res.data });
             });
     }
 
     getProfilePic = () => {
-        axios.get('/profiles?current=true')
+        axios.get('api/profiles?current=true')
             .then(res => {
                 this.setState({ profilePicUrl: res.data[0].url });
             });

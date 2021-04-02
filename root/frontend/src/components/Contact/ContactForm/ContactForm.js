@@ -16,16 +16,18 @@ class ContactForm extends Component {
         this.setState({ status: "Sending Message..." });
         axios({
             method: "POST",
-            url: "/contact",
+            url: "api/contact",
             data: this.state,
-        }).then(res => {
+        })
+	.then(res => {
             if (res.data.status === "sent") {
                 alert("Message Sent");
                 this.setState({ name: "", email: "", message: "", subject: "", status: "Send" });
-            } else if (res.data.status === "failed") {
+            } 
+	    else if (res.data.status === "failed") {
                 alert("Message Failed");
             }
-        })
+        });
     }
     inputChangedHandler = event => {
         const field = event.target.id;
