@@ -59,7 +59,7 @@ class Portfolio extends Component {
     getAllSectionInfo = () => {
         const sections = JSON.parse(JSON.stringify(this.state.sections));
         Object.keys(sections).forEach((section) => {
-            let sectionRoute = 'api/sections?name=' + section;
+            let sectionRoute = 'https://findanthonyviera.com/api/sections?name=' + section;
             axios.get(sectionRoute)
                 .then(res => {
                     sections[section].title = res.data.title;
@@ -70,21 +70,21 @@ class Portfolio extends Component {
     }
 
     getAllSkills = () => {
-        axios.get('api/skills')
+        axios.get('https://findanthonyviera.com/api/skills')
             .then(res => {
                 this.setState({ skills: res.data });
             });
     }
 
     getAllProjects = () => {
-        axios.get('api/projects')
+        axios.get('https://findanthonyviera.com/api/projects')
             .then(res => {
                 this.setState({ projects: res.data });
             });
     }
 
     getProfilePic = () => {
-        axios.get('api/profiles?current=true')
+        axios.get('https://findanthonyviera.com/api/profiles?current=true')
             .then(res => {
                 this.setState({ profilePicUrl: res.data[0].url });
             });
