@@ -16,17 +16,17 @@ class ContactForm extends Component {
         this.setState({ status: "Sending Message..." });
         axios({
             method: "POST",
-            url: "api/contact",
+            url: "https://formspree.io/f/xwkakplo",
             data: this.state,
         })
-	.then(res => {
-            if (res.data.status === "sent") {
-                alert("Message Sent");
-                this.setState({ name: "", email: "", message: "", subject: "", status: "Send" });
-            } 
-	    else if (res.data.status === "failed") {
-                alert("Message Failed");
-            }
+        .then(() => {
+            alert("Message Sent, Thank You!");
+            this.setState({ name: "", email: "", message: "", subject: "", status: "Send" });
+        })
+        .catch(error => {
+            alert("Message failed to send.");
+            this.setState({ name: "", email: "", message: "", subject: "", status: "Send" });
+            console.log(error);
         });
     }
     inputChangedHandler = event => {
