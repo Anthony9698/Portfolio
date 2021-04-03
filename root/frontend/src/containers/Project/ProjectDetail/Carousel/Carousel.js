@@ -9,26 +9,20 @@ class Carousel extends Component {
         currSlideIndex: 0
     }
 
-    componentDidUpdate(prevProps, prevState) {
-        if (prevState.currSlideIndex !== 0) {
-            this.setState({ currSlideIndex: 0 });
-        }
-    }
-
     goToSlide = slideNum => {
         let imageAlbum = this.props.imageAlbum;
-        let currSlideIndex = this.state.currSlideIndex;
+        let slideIndex = this.state.currSlideIndex;
         if (imageAlbum[0]) {
-            if (currSlideIndex+slideNum < 0) {
-                currSlideIndex = imageAlbum.length-1;
+            if (slideIndex+slideNum < 0) {
+                slideIndex = imageAlbum.length-1;
             }
-            else if (currSlideIndex+slideNum > imageAlbum.length-1) {
-                currSlideIndex = 0;
+            else if (slideIndex+slideNum > imageAlbum.length-1) {
+                slideIndex = 0;
             }
             else {
-                currSlideIndex += slideNum;
+                slideIndex = slideIndex + slideNum;
             }
-            this.setState({ currSlideIndex: currSlideIndex });
+            this.setState({ currSlideIndex: slideIndex });
         }
     }
 
