@@ -20,6 +20,7 @@
 }
 
 .ProfilePic {
+    user-select: none;
 }
 
 .Greeting {

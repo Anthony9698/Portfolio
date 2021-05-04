@@ -1,5 +1,6 @@
 .Project {
     padding: 32px;
+    user-select: none;
 }
 
 .CoverImg {

@@ -4,6 +4,7 @@ import Skills from './Skills/Skills';
 import VizSensor from 'react-visibility-sensor';
 import GitHubCalendar from 'react-github-calendar';
 import ReactTooltip from 'react-tooltip';
+import Technologies from './Technologies/Technologies';
 
 const about = props => (
     <div
@@ -14,7 +15,7 @@ const about = props => (
         </VizSensor>
         <div className={styles.MainContent}>
             <p className={styles.Description}>{props.description}</p>
-            <Skills isVisible={props.aboutVisible} skills={props.skills} />
+            <Technologies />
             <div className={styles.Github}>
                 <div className={styles.Label}>GitHub</div>
                 <GitHubCalendar

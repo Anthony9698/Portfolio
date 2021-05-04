@@ -1,0 +1,44 @@
+.Technologies {
+    width: 100%;
+    text-align: center;
+    user-select: none;
+}
+
+.Technologies img {
+    height: 100px;
+    width: 100px;
+}
+
+.Tech {
+    margin: 2rem;
+}
+
+.Technologies h3 {
+    font-size: 2rem;
+    font-weight: normal;
+    color: var(--secondary-color);
+    margin-bottom: 0;
+}
+
+.Row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Row h3 {
+    display: block;
+}
+
+.Title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+@media (max-width: 925px) {
+    .Row {
+        flex-wrap: wrap;
+    }
+}

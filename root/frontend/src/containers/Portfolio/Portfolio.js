@@ -37,7 +37,6 @@ class Portfolio extends Component {
 
     componentDidMount = () => {
         this.getAllSectionInfo();
-        this.getAllSkills();
         this.getAllProjects();
         this.getProfilePic();
     }
@@ -67,13 +66,6 @@ class Portfolio extends Component {
                     this.setState({ sections: JSON.parse(JSON.stringify(sections)) });
                 });
         });
-    }
-
-    getAllSkills = () => {
-        axios.get('https://findanthonyviera.com/api/skills')
-            .then(res => {
-                this.setState({ skills: res.data });
-            });
     }
 
     getAllProjects = () => {
