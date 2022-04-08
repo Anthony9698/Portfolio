@@ -4,8 +4,8 @@ This application was created to have a personal portfolio about me and some of t
 
 ### Architecture
 
-Frontend - React
-Backend - Node
-Database - MongoDB
-Web Server - Nginx
+Frontend - React \
+Backend - Node \
+Database - MongoDB \
+Web Server - Nginx \
 Media Hosting - AWS S3
